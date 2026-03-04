@@ -491,6 +491,7 @@ export default function PalladiumTrip() {
                     {/* Before vs After mini */}
                     {saving > 0 && (
                       <div
+                        className="savings-bar"
                         style={{
                           margin: "16px 20px 0",
                           padding: "12px 16px",

@@ -60,4 +60,9 @@ body {
   .expedition-total {
     font-size: 24px !important;
   }
+  .savings-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
 }
