@@ -117,9 +117,9 @@ const ROOM_IMAGES: Record<string, string[]> = {
 };
 
 const fmt = (n: number) =>
-  n.toLocaleString("en-US", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
+  Math.ceil(n).toLocaleString("en-US", {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
   });
 const fmtInt = (n: number) =>
   n.toLocaleString("en-US", {
