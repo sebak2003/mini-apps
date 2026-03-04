@@ -19,11 +19,11 @@ interface DolarQuote {
 const API_URL = "https://dolarapi.com/v1/ambito/dolares";
 
 const DISPLAY_ORDER = [
+  "cripto",
   "blue",
   "oficial",
   "bolsa",
   "contadoconliqui",
-  "cripto",
   "tarjeta",
   "mayorista",
 ];
