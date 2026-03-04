@@ -434,7 +434,6 @@ export const JOKES: string[] = [
   "Nani se ponga el pijama para ir al buffet de medianoche sin ninguna vergüenza",
   "el chef del Palladium aprenda qué es el dulce de leche argentino gracias a nosotros",
   "la familia pida 'un poquito más por favor' en cada restaurante del resort",
-  "descubramos que el VIP del Socio Travel Club valió cada centavo invertido",
   "Pichi confunda el lobby bar con su living personal y se instale ahí permanentemente",
   "la familia deje reviews mentales de cada restaurante como si fueran críticos gastronómicos profesionales",
   "la barra VIP necesite un delivery urgente de ron por culpa de nuestra familia",
