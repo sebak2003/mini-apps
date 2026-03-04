@@ -326,18 +326,6 @@ export default function PalladiumTrip() {
               overflow: "hidden",
             }}
           >
-            <p
-              style={{
-                fontSize: "10px",
-                letterSpacing: "3px",
-                textTransform: "uppercase",
-                color: "#c9a84c",
-                margin: "0 0 12px",
-                fontWeight: 600,
-              }}
-            >
-              Cuenta regresiva
-            </p>
             {/* Joke */}
             <div
               style={{
