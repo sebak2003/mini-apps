@@ -224,30 +224,6 @@ export const JOKES: string[] = [
   "Sebastian, Bruno y Nani calculen que durmieron un total de 15 horas entre los tres en 9 noches",
 
   // ═══════════════════════════════════════════════════════════════
-  // ROQUE - SUTILES (~20)
-  // ═══════════════════════════════════════════════════════════════
-  "Roque encuentre la mejor reposera del resort antes que todos cada mañana",
-  "Roque se haga amigo del jardinero del Palladium en los primeros 15 minutos",
-  "Roque se levante a las 6 AM y tenga la pileta entera para él solo",
-  "Roque sea el primero en la fila del buffet del desayuno cada día sin excepción",
-  "Roque elija la silla más cómoda del lobby y la haga oficialmente suya por 9 días",
-  "Roque conozca cada rincón del resort mejor que el personal después de 48 horas",
-  "Roque encuentre un rincón tranquilo que ningún otro huésped haya descubierto",
-  "Roque sea el único que se levante descansado y renovado todos los días del viaje",
-  "Roque le explique a Valentino cómo se viajaba cuando él era chico",
-  "Roque tenga su propia rutina de resort completamente independiente y perfeccionada",
-  "Roque sea el primero en probar cada restaurante nuevo del hotel",
-  "Roque haga más amigos entre el personal del resort que todos los demás juntos",
-  "Roque descubra el rincón de lectura del Palladium y establezca residencia permanente ahí",
-  "Roque se adapte al ritmo caribeño más rápido que cualquier millennial del grupo",
-  "Roque tenga el bronceado más parejo del grupo sin hacer el más mínimo esfuerzo",
-  "Roque descubra que el all-inclusive incluye café expresso de verdad y declare que está en el cielo",
-  "Roque sea la única persona genuinamente relajada del grupo durante los 9 días completos",
-  "Roque encuentre la hamaca perfecta entre dos palmeras y la defienda con honor",
-  "Roque se despierte con el sol caribeño y diga 'esto sí es vida' todas las mañanas",
-  "Roque camine más kilómetros recorriendo el resort que cualquier excursión organizada",
-
-  // ═══════════════════════════════════════════════════════════════
   // VALENTINO Y JULI - NENES (~30)
   // ═══════════════════════════════════════════════════════════════
   "Valentino y Juli conviertan la pileta de adultos en un parque acuático no autorizado",
@@ -574,4 +550,267 @@ export const JOKES: string[] = [
   "la familia descubra que 9 noches all-inclusive no son suficientes para hacer todo lo planeado",
   "alguien llore genuinamente en el aeropuerto de vuelta porque no quiere volver a la realidad",
   "19 personas en 4 generaciones demuestren que la felicidad es un all-inclusive familiar en Punta Cana",
+
+  // ═══════════════════════════════════════════════════════════════
+  // "LAS PRIMAS" — SILVIA, SANDRA Y STELLA (~20)
+  // ═══════════════════════════════════════════════════════════════
+  "'Las Primas' salgan a recorrer el resort como si tuvieran 20 años y cero responsabilidades",
+  "'Las Primas' se pidan cocktails con nombres ridículos y se saquen selfies como quinceañeras",
+  "Silvia, Sandra y Stella se autoproclemen 'Las Primas' delante de todo el hotel",
+  "'Las Primas' copen la barra del lobby como si fuera la previa de un boliche en los 90",
+  "'Las Primas' se vistan combinadas para la cena y hagan una entrada triunfal al restaurante",
+  "Silvia, Sandra y Stella se escapen del grupo familiar para tener su 'salida de primas'",
+  "'Las Primas' se pongan a bailar bachata en la playa y arrastren a los maridos que no quieren",
+  "'Las Primas' hagan un brindis cada noche diciendo 'por nosotras, que no envejecemos'",
+  "Silvia, Sandra y Stella se adueñen de tres reposeras VIP y las declaren 'zona de primas'",
+  "'Las Primas' se hagan un shooting de fotos grupal como si fuera una producción de revista",
+  "'Las Primas' le digan a todo el mundo 'somos primas' como si fuera un título nobiliario",
+  "Silvia, Sandra y Stella se den cuenta de que juntas son más peligrosas que sus hijos",
+  "'Las Primas' organicen una noche de chicas que termine peor que la de Bruno, Nani y Sebastian",
+  "'Las Primas' se pongan a cantar en el karaoke del resort y no suelten el micrófono",
+  "Silvia, Sandra y Stella se prometan que este viaje es 'el primero de muchos de Las Primas'",
+  "'Las Primas' cierren el sport bar del hotel a las 3 AM y los maridos ni se enteren",
+  "'Las Primas' se autoproclemen la mejor mesa del restaurante por derecho de antigüedad",
+  "Silvia, Sandra y Stella le enseñen a Francesca y Sofi lo que es una verdadera noche de primas",
+  "'Las Primas' hagan más escándalo en la pileta que Valentino y Juli juntos",
+  "'Las Primas' se olviden la edad real y se comporten como en los veranos de San Clemente",
+
+  // ═══════════════════════════════════════════════════════════════
+  // STELLA TREMENDISTA (~15)
+  // ═══════════════════════════════════════════════════════════════
+  "Stella diga 'nos vamos a morir todos' porque vio una nube gris en el horizonte",
+  "Stella grite '¡es dengue!' por una picadura de mosquito común y silvestre",
+  "Stella le diga a todos que leyó que el Caribe se está hundiendo y este podría ser el último viaje",
+  "Stella anuncie que la corriente marina es 'mortal hoy' porque el agua le llegó a las rodillas",
+  "Stella se convenza de que tiene insolación porque le duele la cabeza después de 4 cocktails",
+  "Stella diga 'presiento algo malo' cada vez que Omar mencione el clima",
+  "Stella llame al médico del hotel porque la arena le hizo un granito en el pie",
+  "Stella le diga a Pichi que no coma del buffet porque 'tiene cara de estar en mal estado'",
+  "Stella convierta un calambre de pileta en una emergencia médica de nivel 5",
+  "Stella anuncie 'esto no es normal' cada vez que el mar tenga olas de más de 20 centímetros",
+  "Stella se autodiagnostique tres enfermedades tropicales distintas en una sola tarde",
+  "Stella diga que la habitación tiene un 'olor raro' que seguro es tóxico",
+  "Stella le pida al barman que le confirme que el hielo está hecho con agua purificada",
+  "Stella se convenza de que el ventilador del techo va a caerse durante la noche",
+  "Stella le mande un audio al grupo diciendo 'chicas, ¿no les parece que el avión hacía un ruido raro?'",
+
+  // ═══════════════════════════════════════════════════════════════
+  // SPORT BAR 24HS (~15)
+  // ═══════════════════════════════════════════════════════════════
+  "Sebastian, Bruno y Nani descubran que el sport bar del Palladium abre las 24 horas y no vuelvan más",
+  "Bruno diga 'voy al sport bar a ver un partido' y aparezca 6 horas después sin poder explicar nada",
+  "Sebastian convierta el sport bar en su oficina personal de 11 PM a 5 AM",
+  "Nani diga 'solo voy a ver los highlights' y terminen cerrando el sport bar",
+  "Bruno, Nani y Sebastian establezcan una rotación de turnos para que el sport bar nunca quede vacío",
+  "el sport bar del Palladium quede bautizado como 'la sucursal argentina' por culpa nuestra",
+  "Pamela vaya a buscar a Bruno al sport bar a las 2 AM y lo encuentre explicándole el offside a un alemán",
+  "Sebastian pida Sidra 1888 en el sport bar y el barman le diga 'señor, esto es el Caribe'",
+  "Bruno y Nani se queden viendo un partido de un deporte que no conocen solo por no irse del bar",
+  "Alejandro descubra que las cervezas del sport bar son all-inclusive y se reconcilie con la vida",
+  "Pichi aparezca en el sport bar, no mire un solo partido, pero se haga amigo de todos los que están",
+  "Daniel se escape de la siesta de Silvia y lo encuentren en el sport bar haciéndose el dormido",
+  "el sport bar necesite reponer stock de cerveza por primera vez en la historia del Palladium",
+  "Omar vaya al sport bar solo para quejarse de que no pasan fútbol argentino",
+  "Sebastian proponga 'una cervecita rápida en el sport bar' y aparezca para el desayuno del día siguiente",
+
+  // ═══════════════════════════════════════════════════════════════
+  // DULCE CARAMELO + NANI Y BRUNO (~10)
+  // ═══════════════════════════════════════════════════════════════
+  "Bruno y Nani se crucen con un animador del Palladium y tengan flashbacks de Dulce Caramelo",
+  "alguien le grite 'DULCE CARAMELO' a Bruno en medio del show nocturno del hotel",
+  "Bruno y Nani vean al animador del resort bailar y se miren con cara de 'ya vivimos esto'",
+  "Vanesa le recuerde a Nani la existencia de Dulce Caramelo en el peor momento posible",
+  "Bruno intente evitar la zona de animación del hotel por trauma post-Dulce Caramelo",
+  "Sebastian cuente la historia de Dulce Caramelo en la cena y Bruno se quiera meter debajo de la mesa",
+  "el animador del Palladium le pida a Bruno que suba al escenario y todos griten 'DULCE CARAMELO'",
+  "Nani diga 'ese se parece' cada vez que vean un animador del resort y Bruno entre en pánico",
+  "Bruno y Nani descubran que el show del Palladium se llama 'Noche Caribeña' y recen que no incluya un Dulce Caramelo 2.0",
+  "la familia entera coree 'DULCE CARAMELO' cada vez que Bruno pase cerca de la pista de baile",
+
+  // ═══════════════════════════════════════════════════════════════
+  // SANDRA - ALL INCLUSIVE MÁS BARATO (~10)
+  // ═══════════════════════════════════════════════════════════════
+  "Sandra mande al grupo de WhatsApp 'hay un all-inclusive que sale 500 USD menos y es igual'",
+  "Sandra encuentre un resort más barato a 3 semanas del viaje y proponga cambiar todo",
+  "Sandra diga 'encontré uno igual pero más barato' por cuarta vez desde que se confirmó el viaje",
+  "Sandra compare el Palladium con un hotel random de Booking que tiene 3 estrellas y media",
+  "Sebastian le diga a Sandra que ya están todas las reservas pagas y ella siga buscando ofertas",
+  "Sandra le pase a Alejandro el link del hotel más barato y él diga 'ves, yo tenía razón'",
+  "Sandra googlee 'all inclusive Punta Cana barato' hasta el día antes de embarcar",
+  "Sandra diga 'no digo que sea mejor, digo que sale menos' sobre un hotel con pileta desinflable",
+  "Sandra le muestre a Silvia el hotel alternativo y Silvia le diga 'Sandra, ya pagamos'",
+  "Sandra archive el link del hotel barato 'para el próximo viaje' y todos respiren aliviados",
+
+  // ═══════════════════════════════════════════════════════════════
+  // OMAR VARIADOS (no solo clima) (~15)
+  // ═══════════════════════════════════════════════════════════════
+  "Omar se queje de la fila del check-in como si fuera una violación a los derechos humanos",
+  "Omar diga 'en mis tiempos los aviones eran más grandes' sin ninguna evidencia",
+  "Omar calcule cuántos litros de protector solar necesitan 19 personas para 9 días y mande la cuenta al grupo",
+  "Omar se queje de que la almohada del hotel es 'demasiado dura' y pida hablar con un gerente",
+  "Omar diga 'esto en Argentina no pasa' sobre algo que pasa constantemente en Argentina",
+  "Omar cuestione el menú del restaurante como si fuera un crítico gastronómico profesional",
+  "Omar se queje de que el wifi del resort es lento y necesite 'al menos 50 Mbps para funcionar'",
+  "Omar analice la relación precio-calidad de cada excursión disponible y no elija ninguna",
+  "Omar proponga un itinerario alternativo al del hotel y nadie le haga caso",
+  "Omar se queje de la música del lobby como si él fuera el director artístico del Palladium",
+  "Omar le diga al personal del hotel cómo deberían organizar el buffet de forma más eficiente",
+  "Omar diga 'a mí me parece que esto se podría hacer mejor' sobre absolutamente todo",
+  "Omar critique la disposición de las reposeras como si fuera un error de ingeniería civil",
+  "Omar mande un resumen ejecutivo del viaje al grupo de WhatsApp que nadie va a leer",
+  "Omar se queje de que el tour en catamarán 'no es lo que prometían en el folleto'",
+
+  // ═══════════════════════════════════════════════════════════════
+  // ALEJANDRO VARIADOS (no solo tacaño) (~10)
+  // ═══════════════════════════════════════════════════════════════
+  "Alejandro descubra que las cervezas del sport bar son gratis y diga 'bueno, el viaje ya se pagó solo'",
+  "Alejandro se quede dormido en la reposera con el libro sobre la cara y se queme solo la panza",
+  "Alejandro intente regatear en una excursión hasta que Sandra lo frene con la mirada",
+  "Alejandro diga 'el año que viene vamos a un camping' y Sandra le diga 'ni en chiste'",
+  "Alejandro se lleve las chancletas del hotel como trofeo personal del viaje",
+  "Alejandro intente calcular cuántas empanadas podría comprar con lo que sale una excursión",
+  "Alejandro descubra que el snack bar nocturno es gratis y no pueda creer su buena fortuna",
+  "Alejandro se ría solo pensando en que está tomando champagne gratis en el Caribe",
+  "Alejandro diga 'para el próximo viaje organizo yo' y nadie le crea ni un segundo",
+  "Alejandro le diga a Sandra 'viste que al final el all-inclusive valió la pena' como si él lo hubiera elegido",
+
+  // ═══════════════════════════════════════════════════════════════
+  // CREW + FIESTA — MÁS PICANTES (~20)
+  // ═══════════════════════════════════════════════════════════════
+  "Sebastian vuelva a la habitación a las 7 AM caminando de costado y diga 'el sol ya está lindo'",
+  "Bruno se despierte en la reposera de la playa sin recordar cómo llegó ahí",
+  "Nani le diga a Vanesa 'volvimos temprano' con los ojos cerrados de sueño a las 11 AM",
+  "Sebastian, Bruno y Nani descubran que el fernet se puede tomar con Coca-Cola dominicana y lloren",
+  "Bruno se niegue a reconocer que está borracho porque 'son tragos del Caribe y son más suaves'",
+  "Nani intente bailar reggaetón y Vanesa lo grabe para chantajearlo el resto del viaje",
+  "Sebastian declare que el barman del VIP es su nuevo mejor amigo desde el segundo día",
+  "Bruno pierda las llaves de la habitación y jure que las tenía 'hace 5 minutos' (hace 5 horas)",
+  "Nani se quede dormido en el jacuzzi y alguien tenga que sacarlo como a un fideoovercocinado",
+  "Sebastian intente pedir un asado en el restaurante a la carta a las 2 AM y el chef le diga que no",
+  "Bruno y Nani se reten a ver quién aguanta más shots de tequila y ninguno gane",
+  "Sebastian se emocione tanto con el karaoke que cante 3 canciones seguidas y nadie lo pueda parar",
+  "Bruno vuelva del sport bar con una camiseta de un equipo que no conoce y sin poder explicar por qué",
+  "Nani descubra que los tragos de la barra de la playa son más fuertes y lo descubra demasiado tarde",
+  "Sebastian, Bruno y Nani se pierdan la excursión a Isla Saona porque 'pusimos la alarma pero no sonó'",
+  "Bruno intente hacer un mortal en la pileta, falle, y Pamela diga 'te lo dije' sin mirarlo",
+  "Nani se haga famoso entre los bartenders como 'el argentino que prueba todo'",
+  "Sebastian convierta cada cena en una previa y cada previa en una after",
+  "Bruno y Nani lleguen al lobby con la misma ropa de ayer y actúen como si nada",
+  "Sebastian se haga un amigo brasileño en la barra y termine hablando portuñol toda la noche",
+
+  // ═══════════════════════════════════════════════════════════════
+  // VANESA JODONA — MÁS PICANTES (~15)
+  // ═══════════════════════════════════════════════════════════════
+  "Vanesa le cuente a Silvia con detalle todo lo que hizo Daniel anoche en la barra VIP",
+  "Vanesa les avise a todos que 'se canceló la excursión' para que se queden y después diga 'era joda'",
+  "Vanesa le mande un audio falso a Bruno haciéndose pasar por la recepción del hotel",
+  "Vanesa les diga a los nenes que hay un parque de dinosaurios en el resort para que enloquezcan",
+  "Vanesa le ponga picante a escondidas al plato de alguien en el buffet",
+  "Vanesa le diga a Alejandro que le cobraron algo extra y lo deje sufrir 10 minutos antes de decir la verdad",
+  "Vanesa filme a Sebastian comiendo su cuarto plato de buffet y lo suba al grupo con zoom",
+  "Vanesa le diga a Stella que el agua de la canilla del hotel 'tiene un color raro' y la vea entrar en espiral",
+  "Vanesa organice una falsa tormenta tropical por WhatsApp solo para molestar a Omar",
+  "Vanesa le diga a Pamela que Bruno estaba tirándose bombas en la pileta cuando Pamela no estaba",
+  "Vanesa les cuente a todos la anécdota más vergonzosa de Nani en el peor momento posible",
+  "Vanesa proponga un juego de preguntas personales en la cena y nadie quiera jugar excepto ella",
+  "Vanesa le esconda la toalla a Daniel justo cuando sale de la pileta y Silvia la busque por todo el resort",
+  "Vanesa se haga pasar por la anfitriona del hotel y les dé indicaciones falsas a otros huéspedes",
+  "Vanesa le cuente al grupo el secreto de alguien que le dijeron 'no cuentes' hace 3 minutos",
+
+  // ═══════════════════════════════════════════════════════════════
+  // COMBOS FAMILIARES PICANTES (~25)
+  // ═══════════════════════════════════════════════════════════════
+  "Silvia persiga a Daniel con protector solar por toda la playa mientras Sandra filma y se muere de risa",
+  "Pichi le cuente a un turista italiano que la familia vino desde San Clemente del Tuyú y le explique toda la historia",
+  "Alejandro y Omar se unan para quejarse de algo que a nadie más le importa",
+  "Pamela y Vanesa se alíen para controlar a Bruno y Nani y fracasen en 10 minutos",
+  "Silvia le diga a Vanesa 'sos igualita a tu madre' como el peor insulto posible y Stella se ofenda",
+  "Omar y Stella se retroalimenten mutuamente: él con el pronóstico y ella con enfermedades",
+  "Pichi haga reír a un grupo de turistas coreanos que no entienden nada pero igual se ríen",
+  "Daniel se escape de la siesta, se cruce a Alejandro en el sport bar y se juren secreto mutuo",
+  "Francesca y Sofi les hagan una cuenta regresiva a sus padres de cuánto falta para que las dejen ir solas",
+  "Stella le pregunte a Omar si es normal que el mar haga olas y Omar le conteste con un monólogo meteorológico",
+  "Sandra le diga a Silvia 'vos sos la soga' y Silvia le diga 'y vos la que busca hoteles baratos'",
+  "Pichi le haga un chiste al capitán del catamarán y el tour dure media hora más porque no pararon de hablar",
+  "Valentino y Juli le tiren agua a Omar mientras revisa el pronóstico en la reposera y le mojen el celular",
+  "Bruno, Nani y Sebastian se disfracen para la fiesta temática y Pamela, Vanesa y Silvia se mueran de vergüenza",
+  "Alejandro calcule en voz alta cuánto sale la excursión por hora y Sandra le diga 'callate y disfrutá'",
+  "Silvia le arme la valija a Sebastian a los 38 años y Sebastian no diga ni mu",
+  "Omar le mande a Daniel un artículo sobre los peligros del sol y Daniel ni lo abra porque está durmiendo la siesta",
+  "'Las Primas' le ganen al crew de fiesta en cantidad de tragos consumidos una noche y nadie lo pueda creer",
+  "Vanesa proponga un partido de vóley familiar y termine en discusión sobre quién hizo trampa",
+  "Stella le ponga repelente a Pichi mientras Pichi está hablando con desconocidos sin darse cuenta",
+  "Sebastian pida permiso para repetir por quinta vez en el buffet y el mozo le diga 'señor, es all-inclusive, no necesita permiso'",
+  "Omar y Alejandro se sienten juntos a calcular cuánto costó el viaje por persona por día por actividad",
+  "Pamela y Silvia comparen notas sobre cómo controlar a sus respectivos hombres en vacaciones",
+  "Valentino le pregunte a Sebastian por qué come tanto si está flaco y Sebastian no tenga respuesta",
+  "la familia entera se dé cuenta de que San Clemente del Tuyú fue el entrenamiento para el Palladium",
+
+  // ═══════════════════════════════════════════════════════════════
+  // ALL-INCLUSIVE / BUFFET — MÁS PICANTES (~20)
+  // ═══════════════════════════════════════════════════════════════
+  "alguien descubra que puede pedir room service a las 3 AM y le cambie la vida para siempre",
+  "Sebastian se siente a comer en el buffet y el mozo ya le traiga tres platos porque ya lo conoce",
+  "alguien se lleve una banana del buffet 'para después' y se la encuentre en el bolsillo de la camisa al otro día",
+  "19 argentinos hagamos cola en el buffet del desayuno y el chef piense que hay un evento privado",
+  "alguien pregunte '¿cuántos restaurantes puedo visitar en una noche?' y la respuesta sea 'todos'",
+  "el barman VIP empiece a preparar los tragos de la familia argentina sin que nadie le pida nada",
+  "alguien intente mezclar comida japonesa con comida italiana en el mismo plato y lo defienda con honor",
+  "la familia descubra que hay un buffet de medianoche y se reorganice toda la logística del sueño",
+  "Sebastian se emocione porque encontró dulce de leche en el buffet y llame a todos por WhatsApp",
+  "alguien se quede dormido esperando la cena porque almorzó demasiado",
+  "Bruno pida 'lo mismo de ayer' en el restaurante y el mozo no tenga idea de qué habla",
+  "Nani descubra que los mojitos de la playa llevan más ron que los de la barra y tome nota",
+  "alguien cuente cuántos platos probó en una cena y el número supere los dos dígitos",
+  "el personal del resort empiece a llamar a nuestra familia 'los argentinos del buffet'",
+  "Sebastian se lleve un plato de postre 'para la habitación' y se lo coma en el ascensor",
+  "la familia necesite dos turnos de cena porque no entramos todos en la misma mesa",
+  "alguien descubra el brunch del domingo y diga 'esto es lo mejor que inventó la humanidad'",
+  "Bruno y Nani pidan shots después de la cena y el mozo les diga 'señores, esto es un restaurante' sin convicción",
+  "la familia haga el check-out con 3 kilos más por persona en promedio",
+  "alguien diga 'no me entra más nada' a las 3 PM y a las 7 PM esté en el buffet de vuelta",
+
+  // ═══════════════════════════════════════════════════════════════
+  // VARIOS — PICANTES Y COMBINADOS (~40)
+  // ═══════════════════════════════════════════════════════════════
+  "Silvia sugiera una actividad grupal y todos se escondan en sus habitaciones",
+  "Pichi le haga un chiste al tipo de seguridad del aeropuerto y Stella casi se desmaye del susto",
+  "Vanesa le diga a todos que hay un upgrade gratis y sea completamente mentira",
+  "Bruno diga 'yo a la playa no voy hoy' y aparezca en la playa 20 minutos después",
+  "Omar se queje de que las olas no están lo suficientemente calmas para nadar",
+  "Sebastian organize la mesa del restaurante como si fuera una reunión de directorio",
+  "Alejandro descubra la tienda libre de impuestos del aeropuerto y entre en conflicto moral",
+  "Valentino pregunte en voz alta '¿por qué tío Seba come tanto?' en medio del buffet silencioso",
+  "Silvia le arme a Daniel un horario de vacaciones más estricto que un horario laboral",
+  "Sandra le mande a Alejandro otro link de hotel barato y él le diga 'Sandra, ya estamos acá'",
+  "Pichi intente entrar al kids club a animar a los nenes y el personal no sepa si dejarlo",
+  "Stella confunda una iguana del resort con un 'animal peligroso no identificado'",
+  "Bruno y Sebastian compitan por quién come más empanadas en una sentada y ambos se arrepientan",
+  "Nani se haga pasar por DJ en la fiesta de la pileta y nadie lo frene",
+  "Francesca le diga a Pamela 'mamá, por favor no bailes' en público",
+  "Omar le diga a Flor que el vuelo de vuelta tiene más turbulencia según su análisis personal",
+  "Silvia les ponga horario de volver a la habitación a todos como si tuvieran 15 años",
+  "Vanesa convenza a la familia de hacer un flash mob en la playa que salga horrible",
+  "Alejandro descubra que la excursión incluye almuerzo y de repente le parezca buena idea",
+  "Stella lleve su propio jabón antibacterial porque 'no confía en el del hotel'",
+  "Sebastian le diga al chef del restaurante que en Argentina se cocina mejor y el chef lo ignore con dignidad",
+  "'Las Primas' se peleen por quién se queda con la mejor reposera y termine interviniendo el guardavidas",
+  "Pichi invite a toda una excursión de desconocidos a la cena familiar y nadie se anime a decirle que no",
+  "Omar googlee '¿es seguro comer mariscos en República Dominicana?' antes de cada cena",
+  "Bruno se tire una bomba tan grande en la pileta que Pamela finja que no lo conoce",
+  "Valentino y Juli hagan una competencia de gritos en la playa y gane Juli por lejos",
+  "Sebastian descubra que el all-inclusive incluye clases de bachata y se anote con el nombre falso",
+  "Silvia le diga a Daniel 'vos no tomás más' y Daniel ya esté pidiendo otro trago con la mirada",
+  "Nani y Bruno intenten hacerle una broma a Vanesa y Vanesa les devuelva una peor en 5 minutos",
+  "la familia entera intente irse del resort a hacer una excursión y tarden 2 horas en juntarse los 19",
+  "Sofi le pida a Sebastian que le saque 'solo una foto más' por séptima vez en la misma pose",
+  "Omar se queje del volumen de la animación nocturna como si él pagara las cuentas del resort",
+  "Stella le pregunte al médico del hotel si es normal sentirse 'demasiado relajada' en vacaciones",
+  "Pichi se haga viral en el TikTok de otro huésped por un chiste que hizo en la pileta",
+  "Sandra diga 'yo el año que viene encuentro algo mejor' y todos le griten '¡NO!'",
+  "Sebastian, Bruno y Nani le enseñen el himno argentino al barman y él lo cante mejor que ellos",
+  "Silvia, Sandra y Stella organicen una sesión de fotos de 'Las Primas' que dure más que la excursión",
+  "toda la familia se emocione viendo el atardecer caribeño y Omar lo arruine diciendo que mañana llueve",
+  "los 19 nos miremos en la foto grupal y digamos 'de San Clemente a Punta Cana, mirá lo que somos'",
+  "este viaje se convierta en la historia que contemos en cada reunión familiar de acá a la eternidad",
 ];

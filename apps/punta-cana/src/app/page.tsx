@@ -131,14 +131,11 @@ const fmtInt = (n: number) =>
 const TRIP_DATE = new Date(2026, 9, 27); // Oct 27, 2026
 const JOKE_INTERVAL = 10_000; // 10 seconds
 
-function seededShuffle(arr: string[], seed: number): string[] {
+function shuffle(arr: string[]): string[] {
   const out = [...arr];
-  let m = out.length;
-  let s = seed;
-  while (m) {
-    s = (s * 1664525 + 1013904223) & 0xffffffff;
-    const i = ((s >>> 0) % m--);
-    [out[m], out[i]] = [out[i], out[m]];
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
   }
   return out;
 }
@@ -154,11 +151,7 @@ export default function PalladiumTrip() {
   const [jokeFade, setJokeFade] = useState(true);
   const [mounted, setMounted] = useState(false);
 
-  const shuffledJokes = useMemo(() => {
-    const d = new Date();
-    const seed = d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
-    return seededShuffle(JOKES, seed);
-  }, []);
+  const shuffledJokes = useMemo(() => shuffle(JOKES), []);
 
   const daysLeft = useMemo(() => {
     const diff = TRIP_DATE.getTime() - Date.now();
