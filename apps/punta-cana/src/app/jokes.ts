@@ -426,7 +426,7 @@ export const JOKES: string[] = [
   "nos demos cuenta de que la familia creció de colchones en el piso en San Clemente a 5 estrellas en el Caribe",
   "Pichi cuente en el Palladium que antes dormíamos todos en el piso y los turistas no le crean",
   "Pichi diga 'el helado de Pirulo era mejor' con total ironía mirando el helado artesanal del resort",
-  "Bruno se esconda en el jardín del resort y grite 'policía y ladrón como en el Vivero' y todos los adultos salgan corriendo",
+  "Sebastian se esconda en el jardín del resort y grite 'policía y ladrón como en el Vivero' y todos los adultos salgan corriendo",
   "recordemos las noches en San Clemente peleándonos por quién dormía en el colchón más cerca del ventilador",
   "cambiemos las compras de último momento en La Baticueva por el room service las 24 horas del Palladium",
   "Omar diga 'La Baticueva tenía mejores precios' comparando con la tiendita del resort",
