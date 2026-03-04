@@ -63,4 +63,10 @@ body {
   .savings-bar {
     gap: 8px !important;
   }
+  .countdown-card {
+    padding: 24px 16px 16px !important;
+  }
+  .joke-text {
+    font-size: 14px !important;
+  }
 }

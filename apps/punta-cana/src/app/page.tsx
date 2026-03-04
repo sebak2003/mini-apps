@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { JOKES } from "./jokes";
 
 const FLIGHT_PP = 710;
 const MEMBERSHIP = 660;
@@ -127,10 +128,69 @@ const fmtInt = (n: number) =>
     maximumFractionDigits: 0,
   });
 
+const TRIP_DATE = new Date(2026, 9, 27); // Oct 27, 2026
+const JOKE_INTERVAL = 10_000; // 10 seconds
+
+function seededShuffle(arr: string[], seed: number): string[] {
+  const out = [...arr];
+  let m = out.length;
+  let s = seed;
+  while (m) {
+    s = (s * 1664525 + 1013904223) & 0xffffffff;
+    const i = ((s >>> 0) % m--);
+    [out[m], out[i]] = [out[i], out[m]];
+  }
+  return out;
+}
+
 export default function PalladiumTrip() {
   const [selectedGroup, setSelectedGroup] = useState<number | null>(null);
   const [activeSlide, setActiveSlide] = useState(0);
   const sliderRef = useRef<HTMLDivElement>(null);
+
+  // Countdown + jokes state
+  const [jokeIndex, setJokeIndex] = useState(0);
+  const [progress, setProgress] = useState(0);
+  const [jokeFade, setJokeFade] = useState(true);
+  const [mounted, setMounted] = useState(false);
+
+  const shuffledJokes = useMemo(() => {
+    const d = new Date();
+    const seed = d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
+    return seededShuffle(JOKES, seed);
+  }, []);
+
+  const daysLeft = useMemo(() => {
+    const diff = TRIP_DATE.getTime() - Date.now();
+    return Math.max(0, Math.ceil(diff / 86_400_000));
+  }, []);
+
+  // Mount flag to avoid hydration mismatch (server vs client date)
+  useEffect(() => setMounted(true), []);
+
+  // Auto-rotate jokes + progress bar
+  useEffect(() => {
+    if (!mounted) return;
+    const startTime = Date.now();
+
+    const progressTimer = setInterval(() => {
+      const elapsed = (Date.now() - startTime) % JOKE_INTERVAL;
+      setProgress(elapsed / JOKE_INTERVAL);
+    }, 50);
+
+    const jokeTimer = setInterval(() => {
+      setJokeFade(false);
+      setTimeout(() => {
+        setJokeIndex((i) => (i + 1) % shuffledJokes.length);
+        setJokeFade(true);
+      }, 400);
+    }, JOKE_INTERVAL);
+
+    return () => {
+      clearInterval(progressTimer);
+      clearInterval(jokeTimer);
+    };
+  }, [mounted, shuffledJokes.length]);
 
   const totalExpedition = TRAVEL_GROUPS.reduce((s, tg) => {
     const gt = GROUPS_TYPE[tg.type];
@@ -256,6 +316,119 @@ export default function PalladiumTrip() {
             <span>Promo BIGDAYS −13.33%</span>
           </div>
         </header>
+
+        {/* COUNTDOWN + JOKES */}
+        {mounted && (
+          <div
+            className="countdown-card"
+            style={{
+              marginBottom: "20px",
+              background:
+                "linear-gradient(135deg, rgba(201,168,76,0.12) 0%, rgba(201,168,76,0.03) 100%)",
+              border: "1px solid rgba(201,168,76,0.2)",
+              borderRadius: "14px",
+              padding: "28px 24px 20px",
+              textAlign: "center",
+              position: "relative",
+              overflow: "hidden",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "10px",
+                letterSpacing: "3px",
+                textTransform: "uppercase",
+                color: "#c9a84c",
+                margin: "0 0 16px",
+                fontWeight: 600,
+              }}
+            >
+              Cuenta regresiva
+            </p>
+            <p
+              style={{
+                fontFamily: "'Playfair Display', serif",
+                fontSize: "clamp(42px, 10vw, 64px)",
+                fontWeight: 700,
+                color: "#fff",
+                margin: 0,
+                lineHeight: 1,
+              }}
+            >
+              {daysLeft}
+            </p>
+            <p
+              style={{
+                fontSize: "14px",
+                color: "#c9a84c",
+                margin: "4px 0 0",
+                fontWeight: 500,
+                letterSpacing: "1px",
+              }}
+            >
+              {daysLeft === 1 ? "día" : "días"}
+            </p>
+            <p
+              style={{
+                fontSize: "12px",
+                color: "rgba(232,224,212,0.4)",
+                margin: "2px 0 20px",
+              }}
+            >
+              para Punta Cana 2026
+            </p>
+            <div
+              style={{
+                minHeight: "48px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <p
+                className="joke-text"
+                style={{
+                  fontSize: "15px",
+                  fontStyle: "italic",
+                  color: "rgba(232,224,212,0.7)",
+                  margin: 0,
+                  lineHeight: 1.5,
+                  maxWidth: "540px",
+                  opacity: jokeFade ? 1 : 0,
+                  transition: "opacity 0.4s ease",
+                }}
+              >
+                <span style={{ color: "rgba(201,168,76,0.4)" }}>&ldquo;</span>
+                Faltan{" "}
+                <span style={{ color: "#fff", fontWeight: 600 }}>
+                  {daysLeft} {daysLeft === 1 ? "día" : "días"}
+                </span>{" "}
+                para que {shuffledJokes[jokeIndex]}
+                <span style={{ color: "rgba(201,168,76,0.4)" }}>&rdquo;</span>
+              </p>
+            </div>
+            {/* Progress bar */}
+            <div
+              style={{
+                marginTop: "16px",
+                height: "2px",
+                background: "rgba(232,224,212,0.08)",
+                borderRadius: "1px",
+                overflow: "hidden",
+              }}
+            >
+              <div
+                style={{
+                  height: "100%",
+                  width: `${progress * 100}%`,
+                  background: "#c9a84c",
+                  borderRadius: "1px",
+                  transition: "width 0.05s linear",
+                }}
+              />
+            </div>
+          </div>
+        )}
 
         {/* GROUPS */}
         <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
