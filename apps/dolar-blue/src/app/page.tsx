@@ -201,6 +201,83 @@ function DolarCard({
   );
 }
 
+function Converter({ rate }: { rate: number }) {
+  const [direction, setDirection] = useState<"ars-to-usd" | "usd-to-ars">(
+    "ars-to-usd"
+  );
+  const [input, setInput] = useState("");
+
+  const numericInput = parseFloat(input.replace(/,/g, "")) || 0;
+  const result =
+    direction === "ars-to-usd"
+      ? numericInput / rate
+      : numericInput * rate;
+
+  const fromLabel = direction === "ars-to-usd" ? "ARS" : "USD";
+  const toLabel = direction === "ars-to-usd" ? "USD" : "ARS";
+  const formattedResult =
+    direction === "ars-to-usd"
+      ? result.toLocaleString("es-AR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+      : Math.round(result).toLocaleString("es-AR");
+
+  return (
+    <div className="rounded-2xl border border-card-border bg-card p-5">
+      <div className="mb-4 flex items-center justify-between">
+        <h2 className="text-base font-semibold tracking-tight">Calculadora</h2>
+        <span className="text-xs text-muted">
+          1 USD = $ {Math.round(rate).toLocaleString("es-AR")}
+        </span>
+      </div>
+
+      <div className="flex items-center gap-3">
+        {/* Input */}
+        <div className="relative flex-1">
+          <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm font-medium text-label">
+            {fromLabel}
+          </span>
+          <input
+            type="text"
+            inputMode="decimal"
+            placeholder="0"
+            value={input}
+            onChange={(e) => {
+              const v = e.target.value.replace(/[^0-9.,]/g, "");
+              setInput(v);
+            }}
+            className="w-full rounded-xl border border-card-border bg-background py-3 pl-13 pr-3 text-right text-base font-semibold tabular-nums outline-none transition-colors focus:border-card-highlight-border"
+          />
+        </div>
+
+        {/* Swap button */}
+        <button
+          onClick={() => {
+            setDirection((d) =>
+              d === "ars-to-usd" ? "usd-to-ars" : "ars-to-usd"
+            );
+            setInput("");
+          }}
+          aria-label="Invertir conversión"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-card-border text-muted transition-colors hover:bg-card-highlight hover:text-foreground active:scale-95"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4" />
+          </svg>
+        </button>
+
+        {/* Result */}
+        <div className="relative flex-1">
+          <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm font-medium text-label">
+            {toLabel}
+          </span>
+          <div className="w-full rounded-xl border border-card-border bg-background py-3 pl-13 pr-3 text-right text-base font-semibold tabular-nums text-muted">
+            {numericInput > 0 ? formattedResult : "0"}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ─── Page ────────────────────────────────────────────────
 
 export default function Page() {
@@ -287,6 +364,18 @@ export default function Page() {
               />
             ))}
       </div>
+
+      {/* Converter */}
+      {!loading && quotes.length > 0 && (() => {
+        const cripto = quotes.find((q) => q.casa === "cripto");
+        if (!cripto) return null;
+        const avg = (cripto.compra + cripto.venta) / 2;
+        return (
+          <div className="mt-6">
+            <Converter rate={avg} />
+          </div>
+        );
+      })()}
 
       {/* Footer */}
       {!loading && quotes.length > 0 && (
