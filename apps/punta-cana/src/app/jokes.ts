@@ -287,23 +287,24 @@ export const JOKES: string[] = [
   "Sofi le pida a Sebastian que le saque una foto 'natural' y le dirija 47 tomas diferentes",
 
   // ═══════════════════════════════════════════════════════════════
-  // ALEJANDRO Y OMAR — COMBO DÚOS (~15)
+  // ALEJANDRO Y OMAR — DÚOS OPUESTOS (~15)
+  // Omar se queja de todo, Alejandro disfruta que todo es gratis
   // ═══════════════════════════════════════════════════════════════
-  "Alejandro y Omar se sienten en la reposera a analizar todo lo que podría salir mal del viaje",
-  "Omar y Alejandro armen un PowerPoint mental con los riesgos del viaje y nadie los escuche",
-  "Alejandro y Omar sean los últimos en meterse a la pileta porque 'el agua está rara hoy'",
-  "Omar le diga a Alejandro que la excursión es una trampa turística y se queden en el hotel",
-  "Alejandro y Omar critiquen la temperatura del aire acondicionado del lobby durante 20 minutos",
-  "Omar y Alejandro se quejen en simultáneo de cosas distintas y ninguno escuche al otro",
-  "Alejandro y Omar se conviertan en los comentaristas oficiales de todo lo que pasa en el resort",
-  "Omar proponga una queja formal sobre algo y Alejandro lo apoye sin saber de qué se trata",
-  "Alejandro y Omar discutan sobre si conviene la excursión en catamarán o la de jeep como si fuera una decisión de Estado",
-  "Omar y Alejandro sean los primeros en volver del bar porque 'mañana hay que madrugar' y nadie madruque",
-  "Alejandro diga 'Omar tiene razón' sin saber qué dijo Omar, solo por solidaridad masculina",
-  "Omar y Alejandro comparen los precios de todo lo que ven en el resort con los de Argentina",
-  "Alejandro y Omar hagan una alianza secreta para quejarse del volumen de la música del hotel",
-  "Omar le diga a Alejandro que leyó que la comida de hotel puede caer mal y se arruinen la cena solos",
-  "Alejandro y Omar se den cuenta al final del viaje de que se quejaron de todo y la pasaron increíble",
+  "Omar se queje de la excursión en catamarán y Alejandro diga 'pero es gratis, Omar' con la sonrisa más grande del Caribe",
+  "Omar analice los riesgos del viaje y Alejandro esté al lado pidiendo su tercer trago gratis sin escucharlo",
+  "Omar diga que la pileta está muy llena y Alejandro le conteste 'pero es gratis, metete'",
+  "Omar se queje de que el buffet tiene mucha gente y Alejandro ya esté repitiendo el postre por tercera vez",
+  "Alejandro le diga a Omar 'relajate, es all-inclusive' cada vez que Omar abra la boca para quejarse",
+  "Omar critique el show nocturno del hotel y Alejandro aplauda porque 'es gratis, qué querés'",
+  "Omar proponga una queja formal y Alejandro le diga 'dejá de quejarte y pedite otro trago que no te cobran'",
+  "Omar calcule los riesgos de la excursión y Alejandro ya esté arriba del catamarán con un coctel en la mano",
+  "Alejandro descubra que hasta el spa es gratis y mire a Omar como diciendo 'ves que valía la pena'",
+  "Omar diga que el aire acondicionado está muy fuerte y Alejandro responda 'pero es gratis, ponete un buzo'",
+  "Omar se queje de que la música está fuerte y Alejandro esté bailando con un mojito gratis en cada mano",
+  "Omar le lea a Alejandro un artículo sobre riesgos tropicales y Alejandro le pase un trago sin decir nada",
+  "Alejandro disfrute cada segundo del all-inclusive mientras Omar encuentra un defecto nuevo cada hora",
+  "Omar diga 'esto en Argentina no pasa' y Alejandro le conteste 'en Argentina tampoco es gratis'",
+  "Omar y Alejandro terminen el viaje siendo los que más la pasaron bien, cada uno a su manera",
 
   // ═══════════════════════════════════════════════════════════════
   // STELLA HIPOCONDRÍACA (~25)
@@ -651,7 +652,7 @@ export const JOKES: string[] = [
   "Omar se queje de que el tour en catamarán 'no es lo que prometían en el folleto'",
 
   // ═══════════════════════════════════════════════════════════════
-  // ALEJANDRO VARIADOS (no solo tacaño) (~10)
+  // ALEJANDRO VARIADOS (disfruta lo gratis) (~10)
   // ═══════════════════════════════════════════════════════════════
   "Alejandro se quede dormido en la reposera con el libro sobre la cara y se queme solo la panza",
   "Alejandro diga 'el año que viene vamos a un camping' y Sandra le diga 'ni en chiste'",
@@ -706,7 +707,7 @@ export const JOKES: string[] = [
   // ═══════════════════════════════════════════════════════════════
   "Silvia persiga a Daniel con protector solar por toda la playa mientras Sandra filma y se muere de risa",
   "Pichi le cuente a un turista italiano que la familia vino desde San Clemente del Tuyú y le explique toda la historia",
-  "Alejandro y Omar se unan para quejarse de algo que a nadie más le importa",
+  "Omar se queje de algo y Alejandro le diga 'pero hermano, es gratis' y lo deje sin argumento",
   "Pamela y Vanesa se alíen para controlar a Bruno y Nani y fracasen en 10 minutos",
   "Silvia le diga a Vanesa 'sos igualita a tu madre' como el peor insulto posible y Stella se ofenda",
   "Omar y Stella se retroalimenten mutuamente: él con el pronóstico y ella con enfermedades",
@@ -718,14 +719,14 @@ export const JOKES: string[] = [
   "Pichi le haga un chiste al capitán del catamarán y el tour dure media hora más porque no pararon de hablar",
   "Valentino y Juli le tiren agua a Omar mientras revisa el pronóstico en la reposera y le mojen el celular",
   "Bruno, Nani y Sebastian se disfracen para la fiesta temática y Pamela, Vanesa y Silvia se mueran de vergüenza",
-  "Alejandro calcule en voz alta cuánto sale la excursión por hora y Sandra le diga 'callate y disfrutá'",
+  "Alejandro se anote en todas las excursiones gratis del resort y Sandra le diga 'no podemos hacer todas'",
   "Silvia le arme la valija a Sebastian a los 38 años y Sebastian no diga ni mu",
   "Omar le mande a Daniel un artículo sobre los peligros del sol y Daniel ni lo abra porque está durmiendo la siesta",
   "'Las Primas' le ganen al crew de fiesta en cantidad de tragos consumidos una noche y nadie lo pueda creer",
   "Vanesa proponga un partido de vóley familiar y termine en discusión sobre quién hizo trampa",
   "Stella le ponga repelente a Pichi mientras Pichi está hablando con desconocidos sin darse cuenta",
   "Sebastian pida permiso para repetir por quinta vez en el buffet y el mozo le diga 'señor, es all-inclusive, no necesita permiso'",
-  "Omar y Alejandro se sienten juntos a calcular cuánto costó el viaje por persona por día por actividad",
+  "Omar se queje de los precios de las excursiones y Alejandro le recuerde que son gratis con la pulsera VIP",
   "Pamela y Silvia comparen notas sobre cómo controlar a sus respectivos hombres en vacaciones",
   "Valentino le pregunte a Sebastian por qué se sirve tanto y Sebastian le diga 'porque es gratis, Valen'",
   "la familia entera se dé cuenta de que San Clemente del Tuyú fue el entrenamiento para el Palladium",
@@ -763,7 +764,7 @@ export const JOKES: string[] = [
   "Bruno diga 'yo a la playa no voy hoy' y aparezca en la playa 20 minutos después",
   "Omar se queje de que las olas no están lo suficientemente calmas para nadar",
   "Sebastian organize la mesa del restaurante como si fuera una reunión de directorio",
-  "Alejandro descubra la tienda libre de impuestos del aeropuerto y entre en conflicto moral",
+  "Alejandro descubra la tienda libre de impuestos del aeropuerto y compre de todo porque 'mirá los precios'",
   "Valentino pregunte en voz alta '¿por qué tío Seba come tanto?' en medio del buffet silencioso",
   "Silvia le arme a Daniel un horario de vacaciones más estricto que un horario laboral",
   "Sandra le mande a Alejandro otro link de hotel barato y él le diga 'Sandra, ya estamos acá'",
@@ -823,23 +824,4 @@ export const JOKES: string[] = [
   "Vanesa diga 'me confundí de excursión' con una sonrisa sospechosa y Nani no le crea ni medio segundo",
   "Vanesa se anote en la clase de merengue solo porque el instructor es dominicano y Nani la mire desde la reposera",
   "Vanesa diga 'estaba pidiendo indicaciones' al dominicano con el que estuvo charlando 40 minutos",
-
-  // ═══════════════════════════════════════════════════════════════
-  // BRUNO Y NANI — LA PAREJA DEL VIAJE (~15)
-  // ═══════════════════════════════════════════════════════════════
-  "Bruno y Nani se vayan a hacer kayak solos al atardecer como una pareja en luna de miel",
-  "Bruno y Nani compartan reposera porque 'no hay más' aunque el resort esté vacío",
-  "Bruno y Nani se pongan protector solar mutuamente en la playa mientras Pamela y Vanesa los miran con cara de '¿en serio?'",
-  "Bruno y Nani vayan juntos a la clase de snorkel tomados del brazo y el instructor piense que son pareja",
-  "Bruno y Nani se pidan el mismo trago en la barra y brinden mirándose a los ojos sin querer",
-  "Bruno y Nani se sienten juntos en el catamarán mirando el mar en silencio y Vanesa les saque foto diciendo 'qué lindos'",
-  "Bruno y Nani se anoten juntos en la excursión de buceo y Pamela diga 'vayan, disfruten su cita'",
-  "Bruno y Nani se pierdan juntos en el resort por 3 horas y vuelvan bronceados diciendo 'fuimos a caminar'",
-  "Bruno y Nani discutan quién se queda con la mejor toalla de playa como si vivieran juntos",
-  "Bruno y Nani se guarden lugar mutuamente en el buffet y se traigan platos el uno al otro",
-  "Bruno le pida a Nani que le ponga bronceador en la espalda y Pichi grite 'eso es amor'",
-  "Bruno y Nani se vayan al spa juntos y Vanesa mande la foto al grupo con el caption 'escapada romántica'",
-  "Bruno y Nani se queden viendo el atardecer en la playa y Sebastian los interrumpa gritando 'BESO, BESO'",
-  "Pamela y Vanesa se vayan de compras y Bruno y Nani aprovechen para hacer 'su programa' de pileta y bar",
-  "Bruno y Nani compartan un coctel con dos sorbetes sin darse cuenta y toda la familia les aplauda",
 ];
