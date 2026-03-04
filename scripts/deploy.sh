@@ -78,6 +78,27 @@ else
     exit 1
   fi
   echo "Project created: $PROJECT_ID"
+
+  # --- Connect to GitHub for autodeploy on push ---
+  echo "Connecting to GitHub (sebak2003/mini-apps) for autodeploy..."
+  LINK_RESPONSE=$(curl -s -X POST \
+    "https://api.vercel.com/v9/projects/$PROJECT_ID/link?teamId=$ORG_ID" \
+    -H "Authorization: Bearer $VERCEL_TOKEN" \
+    -H "Content-Type: application/json" \
+    -d '{"type":"github","repo":"sebak2003/mini-apps"}')
+
+  LINK_CHECK=$(echo "$LINK_RESPONSE" | node -e "
+    let d=''; process.stdin.on('data',c=>d+=c); process.stdin.on('end',()=>{
+      try { const p=JSON.parse(d); console.log(p.link?.type || p.error?.message || 'unknown'); } catch(e) { console.log('parse_error'); }
+    });
+  ")
+
+  if [ "$LINK_CHECK" = "github" ]; then
+    echo "GitHub autodeploy connected (pushes to main will deploy automatically)"
+  else
+    echo "Warning: Could not connect GitHub autodeploy: $LINK_CHECK"
+    echo "You can connect manually: vercel git connect"
+  fi
 fi
 
 # --- Link and deploy ---

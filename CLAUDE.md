@@ -205,8 +205,11 @@ pnpm deploy-app <name>
 This script:
 1. Creates a Vercel project (or updates if it exists)
 2. Sets `rootDirectory: apps/<name>`, `installCommand: pnpm install`, `framework: nextjs`
-3. Deploys to production with `vercel --prod`
-4. Assigns alias `<name>.vercel.app`
+3. Connects the project to GitHub (`sebak2003/mini-apps`) for **autodeploy on push to main**
+4. Deploys to production with `vercel --prod`
+5. Assigns alias `<name>.vercel.app`
+
+**After the first deploy**, subsequent pushes to `main` automatically trigger deployments. Each project only builds when its `rootDirectory` changes (or shared `packages/` change). No need to run `pnpm deploy-app` again unless reconfiguring.
 
 **Requirements for deploy:**
 - `VERCEL_TOKEN` must be set in `.env.local`
