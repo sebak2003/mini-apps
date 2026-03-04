@@ -18,7 +18,7 @@ const GROUPS_TYPE: Record<
 > = {
   "1a": { label: "1 Adulto", people: 1 },
   "2a": { label: "2 Adultos", people: 2 },
-  "2a2k": { label: "2 Adultos + 2 Ninos", people: 4, sub: "(15 y 6 anos)" },
+  "2a2k": { label: "2 Adultos + 2 Niños", people: 4, sub: "(15 y 6 años)" },
   "3a": { label: "3 Adultos", people: 3 },
 };
 
@@ -74,7 +74,7 @@ const TRAVEL_GROUPS = [
     members: ["Bruno", "Pamela", "Francesca", "Valentino"],
     type: "2a2k",
     color: "#b88fcc",
-    detail: "2 adultos + 2 ninos",
+    detail: "2 adultos + 2 niños",
     hotel: 2425.97,
     room: "Junior Suite Garden View",
   },
@@ -84,7 +84,7 @@ const TRAVEL_GROUPS = [
     members: ["Vanesa", "Nani", "Sofi", "Juli"],
     type: "2a2k",
     color: "#e6c75a",
-    detail: "2 adultos + 2 ninos",
+    detail: "2 adultos + 2 niños",
     hotel: 2425.97,
     room: "Junior Suite Garden View",
   },
@@ -94,7 +94,7 @@ const TRAVEL_GROUPS = [
     members: ["Roque"],
     type: "1a",
     color: "#7ec8a0",
-    detail: "Papa de Bruno",
+    detail: "Papá de Bruno",
     hotel: 1347.76,
     room: "Junior Suite Garden View",
   },
@@ -556,7 +556,7 @@ export default function PalladiumTrip() {
                           color: "rgba(232,224,212,0.3)",
                         }}
                       >
-                        vs cotizacion original (Palace · Junior Suite · sin
+                        vs cotización original (Palace · Junior Suite · sin
                         promo)
                       </p>
                     )}
@@ -573,7 +573,7 @@ export default function PalladiumTrip() {
                           fontWeight: 600,
                         }}
                       >
-                        Tu habitacion
+                        Tu habitación
                       </p>
                       <p
                         style={{
@@ -664,7 +664,7 @@ export default function PalladiumTrip() {
                                 color: "#fff",
                               }}
                             >
-                              Sena del hotel
+                              Seña del hotel
                             </p>
                             <p
                               style={{
@@ -713,7 +713,7 @@ export default function PalladiumTrip() {
                                   color: "rgba(232,224,212,0.4)",
                                 }}
                               >
-                                ~50% hotel + membresia VIP
+                                ~50% hotel + membresía VIP
                               </span>
                             </div>
                           </div>
@@ -876,7 +876,7 @@ export default function PalladiumTrip() {
                               >
                                 27 de septiembre
                               </span>{" "}
-                              (30 dias antes)
+                              (30 días antes)
                             </p>
                             <div
                               className="payment-box"
@@ -986,7 +986,7 @@ export default function PalladiumTrip() {
                   fontWeight: 600,
                 }}
               >
-                Total expedicion
+                Total expedición
               </p>
               <p
                 style={{
