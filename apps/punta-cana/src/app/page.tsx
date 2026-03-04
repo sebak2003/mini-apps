@@ -370,34 +370,65 @@ export default function PalladiumTrip() {
             >
               para Punta Cana 2026
             </p>
+            {/* Separator */}
             <div
               style={{
-                minHeight: "48px",
+                width: "40px",
+                height: "1px",
+                background: "rgba(201,168,76,0.3)",
+                margin: "0 auto 20px",
+              }}
+            />
+            <div
+              style={{
+                minHeight: "72px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                padding: "0 8px",
               }}
             >
               <p
                 className="joke-text"
                 style={{
-                  fontSize: "15px",
+                  fontFamily: "'Playfair Display', serif",
+                  fontSize: "clamp(16px, 3.5vw, 19px)",
                   fontStyle: "italic",
-                  color: "rgba(232,224,212,0.7)",
+                  color: "rgba(232,224,212,0.85)",
                   margin: 0,
-                  lineHeight: 1.5,
-                  maxWidth: "540px",
+                  lineHeight: 1.6,
+                  maxWidth: "600px",
                   opacity: jokeFade ? 1 : 0,
                   transition: "opacity 0.4s ease",
                 }}
               >
-                <span style={{ color: "rgba(201,168,76,0.4)" }}>&ldquo;</span>
+                <span
+                  style={{
+                    color: "#c9a84c",
+                    fontSize: "1.4em",
+                    lineHeight: 0,
+                    verticalAlign: "-0.15em",
+                    marginRight: "2px",
+                  }}
+                >
+                  &ldquo;
+                </span>
                 Faltan{" "}
-                <span style={{ color: "#fff", fontWeight: 600 }}>
+                <span style={{ color: "#fff", fontWeight: 700 }}>
                   {daysLeft} {daysLeft === 1 ? "día" : "días"}
                 </span>{" "}
                 para que {shuffledJokes[jokeIndex]}
-                <span style={{ color: "rgba(201,168,76,0.4)" }}>&rdquo;</span>
+                <span
+                  style={{
+                    color: "#c9a84c",
+                    fontSize: "1.4em",
+                    lineHeight: 0,
+                    verticalAlign: "-0.15em",
+                    marginLeft: "2px",
+                  }}
+                >
+                  &rdquo;
+                </span>
               </p>
             </div>
             {/* Progress bar */}

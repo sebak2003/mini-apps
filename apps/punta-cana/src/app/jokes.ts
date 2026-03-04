@@ -100,7 +100,7 @@ export const JOKES: string[] = [
   // SEBASTIAN SIDRA / BUFFET / FIESTA (~40)
   // ═══════════════════════════════════════════════════════════════
   "Sebastian descubra que la Sidra 1888 no está en el all-inclusive y tenga que conformarse con champagne",
-  "Sebastian se llene 4 platos en el buffet y diga 'es que estoy flaco, me lo puedo permitir'",
+  "Sebastian se llene 4 platos en el buffet y diga 'son vacaciones, no cuenta'",
   "Sebastian pregunte en la barra VIP si tienen Sidra 1888 importada desde Argentina",
   "Sebastian arme una torre de comida en el plato que desafíe las leyes de la gravedad",
   "Sebastian declare que el all-inclusive es su disciplina olímpica",
@@ -122,7 +122,7 @@ export const JOKES: string[] = [
   "Sebastian convierta el minibar de la habitación en su bodega personal de Sidra 1888",
   "Sebastian haga un ranking exhaustivo de los 7 restaurantes del resort",
   "Sebastian pida un waiver oficial para el límite de platos por persona en el buffet",
-  "Sebastian termine el viaje pesando exactamente igual porque su metabolismo es injusto",
+  "Sebastian necesite pantalones nuevos después del tercer día de buffet libre",
   "Sebastian descubra que hay 7 restaurantes y quiera cenar en todos en una sola noche",
   "Sebastian use más el buffet que la playa, la pileta y el spa combinados",
   "Sebastian se pare en la fila del buffet 10 minutos antes de que abra",
@@ -137,7 +137,7 @@ export const JOKES: string[] = [
   "Sebastian haga un álbum de fotos dedicado exclusivamente a sus platos del buffet",
   "Sebastian confunda el restaurante japonés con el buffet libre y pida 'de todo un poco'",
   "Sebastian necesite dos reposeras: una para él y otra para la digestión post-buffet",
-  "Sebastian vuelva de Punta Cana sin un gramo de más y todos lo odien injustamente",
+  "Sebastian vuelva de Punta Cana rodando por el pasillo de Arajet",
   "Sebastian intente convencer al barman de que la Sidra 1888 es una bebida premium internacional",
 
   // ═══════════════════════════════════════════════════════════════
@@ -376,21 +376,21 @@ export const JOKES: string[] = [
   // ═══════════════════════════════════════════════════════════════
   // PAMELA VS BRUNO (~15)
   // ═══════════════════════════════════════════════════════════════
-  "Pamela le prohíba a Bruno hacer bomba en la pileta del hotel por cuarta vez en el día",
-  "Pamela le diga a Bruno que no puede tirarse de cabeza donde dice 'no diving' en inglés",
-  "Pamela le ponga protector solar a Bruno como si tuviera 5 años en vez de 30 y pico",
-  "Pamela persiga a Bruno por medio resort para que se ponga la remera",
-  "Pamela le diga a Bruno 'no hagas escándalo' mientras Bruno está haciendo escándalo",
-  "Pamela calcule las horas de sueño que Bruno perdió por salir con Sebastian y Nani",
-  "Pamela le mande un mensaje a Bruno a las 3 AM preguntando exactamente dónde está",
-  "Pamela le diga a Bruno que se comporte como un adulto responsable frente a Valentino",
-  "Pamela encuentre a Bruno haciendo competencias de bomba con Valentino y Juli en la pileta",
-  "Pamela descubra que Bruno pasó 3 horas en la barra VIP 'buscando dónde cenar'",
-  "Pamela le confisque los shots a Bruno como si fuera su tercer hijo",
-  "Pamela le diga 'una más y nos vamos' y Bruno interprete 'una más... y después otra más'",
-  "Pamela mire a Bruno con esa cara legendaria cuando hace la bomba número 47 del día",
-  "Pamela le explique a Francesca por qué papá está durmiendo a las 2 PM un martes",
-  "Pamela le instale un GPS imaginario a Bruno para saber si está en la barra o en la playa",
+  "Pamela le diga a Bruno '¿dónde están los nenes?' y Bruno esté tirándose de bomba en la pileta",
+  "Bruno salga del baño y se tire de bomba en la pileta mientras Pamela lo busca para que cuide a Valentino y Francesca",
+  "Pamela diga '¿DÓNDE ESTÁ BRUNO?' y Bruno esté en su mundo haciendo la plancha en la pileta",
+  "Bruno desaparezca con Sebastian y Nani mientras Pamela se queda con los chicos por enésima vez",
+  "Pamela le pida a Bruno que vigile a Valentino 5 minutos y a los 2 minutos Bruno esté en la barra",
+  "Bruno diga 'ya vuelvo, voy al baño' y aparezca 40 minutos después mojado de la pileta",
+  "Pamela recorra medio resort buscando a Bruno y lo encuentre haciendo competencias de bomba con Valentino",
+  "Bruno se haga el que no escucha cuando Pamela lo llama porque está en la mitad de una carrera de nado con Nani",
+  "Pamela le deje a los nenes a Bruno 10 minutos y Bruno los lleve a los tres al sport bar",
+  "Bruno sale corriendo del baño, se tira de bomba en la pileta, y Pamela lo ve justo cuando se da vuelta",
+  "Pamela calcule que Bruno pasó más horas en la barra que con sus propios hijos en todo el viaje",
+  "Bruno diga 'estoy con los chicos' mientras los chicos están con Pamela y Bruno está pidiendo un mojito",
+  "Pamela le mande 4 mensajes seguidos a Bruno y Bruno tenga el celular en la reposera a 200 metros",
+  "Bruno se ofrezca a llevar a los nenes a la pileta y termine él jugando mientras los nenes miran",
+  "Pamela le diga a Francesca 'buscá a tu padre' y Francesca lo encuentre haciendo karaoke en el bar",
 
   // ═══════════════════════════════════════════════════════════════
   // MARCELA - NO VIENE (~15)
@@ -743,7 +743,7 @@ export const JOKES: string[] = [
   "Sebastian pida permiso para repetir por quinta vez en el buffet y el mozo le diga 'señor, es all-inclusive, no necesita permiso'",
   "Omar y Alejandro se sienten juntos a calcular cuánto costó el viaje por persona por día por actividad",
   "Pamela y Silvia comparen notas sobre cómo controlar a sus respectivos hombres en vacaciones",
-  "Valentino le pregunte a Sebastian por qué come tanto si está flaco y Sebastian no tenga respuesta",
+  "Valentino le pregunte a Sebastian por qué se sirve tanto y Sebastian le diga 'porque es gratis, Valen'",
   "la familia entera se dé cuenta de que San Clemente del Tuyú fue el entrenamiento para el Palladium",
 
   // ═══════════════════════════════════════════════════════════════
