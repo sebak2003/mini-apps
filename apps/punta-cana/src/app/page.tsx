@@ -332,43 +332,11 @@ export default function PalladiumTrip() {
                 letterSpacing: "3px",
                 textTransform: "uppercase",
                 color: "#c9a84c",
-                margin: "0 0 16px",
+                margin: "0 0 12px",
                 fontWeight: 600,
               }}
             >
               Cuenta regresiva
-            </p>
-            <p
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: "clamp(42px, 10vw, 64px)",
-                fontWeight: 700,
-                color: "#fff",
-                margin: 0,
-                lineHeight: 1,
-              }}
-            >
-              {daysLeft}
-            </p>
-            <p
-              style={{
-                fontSize: "14px",
-                color: "#c9a84c",
-                margin: "4px 0 0",
-                fontWeight: 500,
-                letterSpacing: "1px",
-              }}
-            >
-              {daysLeft === 1 ? "día" : "días"}
-            </p>
-            <p
-              style={{
-                fontSize: "12px",
-                color: "rgba(232,224,212,0.4)",
-                margin: "2px 0 20px",
-              }}
-            >
-              para Punta Cana 2026
             </p>
             {/* Joke */}
             <div
