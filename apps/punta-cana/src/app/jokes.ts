@@ -420,7 +420,7 @@ export const JOKES: string[] = [
   "nos saquemos la foto grupal en el Caribe como la sacábamos en la playa de San Clemente",
   "extrañemos La Baticueva cuando veamos que el minibar del Palladium no tiene fiambre cortado",
   "los chicos se escondan en el resort y los adultos los busquen como en el policía y ladrón del Vivero de San Clemente",
-  "Valentino y Juli pregunten '¿qué es La Baticueva?' y toda la familia se emocione contando la historia",
+  "Sebastian le diga al barman del Palladium 'esto en La Baticueva salía dos mangos' y el barman no entienda nada",
   "pasemos de San Clemente del Tuyú a Bávaro, Punta Cana, y nadie pueda creerlo",
   "cambiemos el '¿hay agua caliente?' de la casa de San Clemente por '¿hay champagne?' en el Palladium",
   "nos demos cuenta de que la familia creció de colchones en el piso en San Clemente a 5 estrellas en el Caribe",
