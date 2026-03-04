@@ -26,3 +26,12 @@ Thumbs.db
 
 # Temp files
 temp/
+
+# Screenshots and captures
+*.png
+*.jpg
+*.jpeg
+docs/capturas/
+
+# Playwright
+.playwright-mcp/
