@@ -1,0 +1,15 @@
+{
+  "name": "@repo/eslint-config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./nextjs": "./nextjs.mjs"
+  },
+  "dependencies": {
+    "eslint-config-next": "16.1.6"
+  },
+  "peerDependencies": {
+    "eslint": "^9"
+  }
+}

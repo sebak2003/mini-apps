@@ -2,9 +2,13 @@
 node_modules/
 
 # Build outputs
+.next/
 dist/
 build/
 *.log
+
+# Turborepo
+.turbo/
 
 # OS files
 .DS_Store
@@ -13,3 +17,9 @@ Thumbs.db
 # IDE files
 .vscode/
 .idea/
+
+# Environment
+.env
+.env.local
+.env.*.local
+.vercel
