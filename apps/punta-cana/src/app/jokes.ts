@@ -813,4 +813,30 @@ export const JOKES: string[] = [
   "toda la familia se emocione viendo el atardecer caribeño y Omar lo arruine diciendo que mañana llueve",
   "los 19 nos miremos en la foto grupal y digamos 'de San Clemente a Punta Cana, mirá lo que somos'",
   "este viaje se convierta en la historia que contemos en cada reunión familiar de acá a la eternidad",
+
+  // ═══════════════════════════════════════════════════════════════
+  // ANÉCDOTAS REALES + EXTRAS
+  // ═══════════════════════════════════════════════════════════════
+  "Sebastian y Bruno repitan el operativo carpa de Mar del Plata: pasar caminando de a uno haciéndose los que no se conocen",
+  "Sebastian y Bruno se miren de lejos en la playa del Palladium y finjan no conocerse como cuando se colaron en la carpa",
+  "Sebastian arme un plan para meter 20 personas en una carpa VIP del resort como hizo en Mar del Plata",
+  "Bruno pase caminando por la carpa con cara de nada y Sebastian entre por el otro lado silbando, como en Mardel",
+  "Sebastian y Bruno le enseñen a Nani la técnica de 'no nos conocemos' para colarse en cualquier lado",
+  "alguien cuente la historia de la carpa de Mar del Plata en el Palladium y todos los argentinos se mueran de risa",
+  "Sebastian y Bruno intenten colarse en la zona premium de la playa haciéndose los que no se conocen y Vanesa los delate gritando sus nombres",
+  "Bruno diga 'yo no lo conozco' señalando a Sebastian que está al lado comiendo del mismo plato",
+  "Sebastian planee el operativo Palladium VIP con la misma seriedad que el operativo carpa de Mardel",
+  "los hombres recuerden la cena en Manolo en Mar del Plata como 'la mejor cena de la historia' y las mujeres como 'el peor restaurante'",
+  "los hombres pidan mariscos en el Palladium felices de la vida y las mujeres se quejen de la temperatura del plato, la iluminación y el viento",
+  "los hombres digan 'qué buena onda el mozo' y las mujeres digan 'tardó 3 minutos, inaceptable'",
+  "Daniel, Omar, Alejandro, Bruno, Nani y Sebastian cenen juntos en paz total y las mujeres en la misma mesa discutan todo",
+  "los hombres digan 'estuvo increíble' y las mujeres digan 'estuvo bien, pero...' de la misma exacta cena",
+  "los hombres aplaudan al chef del Palladium y las mujeres pidan hablar con el gerente",
+  "Sebastian y Bruno se miren cómplices cada vez que haya que colarse en algo y digan 'como en Manolo... digo, como en Mardel'",
+  "Vanesa se haga la distraída y termine en la excursión equivocada con un grupo de dominicanos",
+  "Vanesa 'se pierda' en la playa y aparezca media hora después charlando con un instructor de buceo dominicano",
+  "Nani busque a Vanesa por todo el resort y la encuentre tomando un coctel con un grupo de locales que no hablan español",
+  "Vanesa diga 'me confundí de excursión' con una sonrisa sospechosa y Nani no le crea ni medio segundo",
+  "Vanesa se anote en la clase de merengue solo porque el instructor es dominicano y Nani la mire desde la reposera",
+  "Vanesa diga 'estaba pidiendo indicaciones' al dominicano con el que estuvo charlando 40 minutos",
 ];
