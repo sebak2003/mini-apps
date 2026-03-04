@@ -406,11 +406,11 @@ export const JOKES: string[] = [
   // SAN CLEMENTE → PUNTA CANA (~20)
   // ═══════════════════════════════════════════════════════════════
   "revivamos los veranos en San Clemente del Tuyú, pero esta vez con pulsera VIP del Palladium",
-  "comparemos las olas marrones de San Clemente con el mar turquesa cristalino de Punta Cana",
+  "Pichi le explique a un turista que en San Clemente la heladería top se llamaba Pirulo y lo diga con orgullo",
   "pasemos de comprar fiambre en La Baticueva de San Clemente a buffet libre en el Palladium",
   "cambiemos los colchones en el piso de la casa de San Clemente por camas king size con vista al Caribe",
-  "dejemos atrás las sombrillas rotas de San Clemente por las camas balinesas del Palladium",
-  "los nenes experimenten una playa sin las medusas clásicas de San Clemente del Tuyú",
+  "Vanesa diga 'yo extraño La Baticueva' en el medio del buffet del Palladium y todos se tienten",
+  "Valentino pregunte '¿qué es un Pirulo?' y Silvia le diga 'algo que no necesitás saber, hijo'",
   "pasemos de dormir 15 personas en una casa con 3 habitaciones en San Clemente a suites individuales en Punta Cana",
   "cambiemos el Fernet playero de San Clemente por cocktails VIP en el Caribe",
   "los adultos organicen un policía y ladrón en los jardines del Palladium como en el Vivero de San Clemente",
