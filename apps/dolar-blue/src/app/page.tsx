@@ -338,6 +338,18 @@ export default function Page() {
         )}
       </header>
 
+      {/* Converter */}
+      {!loading && quotes.length > 0 && (() => {
+        const cripto = quotes.find((q) => q.casa === "cripto");
+        if (!cripto) return null;
+        const avg = (cripto.compra + cripto.venta) / 2;
+        return (
+          <div className="mb-6">
+            <Converter rate={avg} />
+          </div>
+        );
+      })()}
+
       {/* Error */}
       {error && (
         <div className="mb-6 rounded-xl border border-down/20 bg-down/5 px-4 py-3 text-sm text-down">
@@ -364,18 +376,6 @@ export default function Page() {
               />
             ))}
       </div>
-
-      {/* Converter */}
-      {!loading && quotes.length > 0 && (() => {
-        const cripto = quotes.find((q) => q.casa === "cripto");
-        if (!cripto) return null;
-        const avg = (cripto.compra + cripto.venta) / 2;
-        return (
-          <div className="mt-6">
-            <Converter rate={avg} />
-          </div>
-        );
-      })()}
 
       {/* Footer */}
       {!loading && quotes.length > 0 && (
