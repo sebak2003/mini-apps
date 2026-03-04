@@ -52,7 +52,7 @@ const DESCRIPTIONS: Record<string, string> = {
 
 function formatARS(value: number | null | undefined): string {
   if (value == null) return "—";
-  return `$ ${value.toLocaleString("es-AR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
+  return `$ ${Math.round(value).toLocaleString("es-AR")}`;
 }
 
 function formatTime(iso: string): string {
