@@ -370,65 +370,51 @@ export default function PalladiumTrip() {
             >
               para Punta Cana 2026
             </p>
-            {/* Separator */}
+            {/* Joke */}
             <div
               style={{
-                width: "40px",
-                height: "1px",
-                background: "rgba(201,168,76,0.3)",
-                margin: "0 auto 20px",
-              }}
-            />
-            <div
-              style={{
-                minHeight: "72px",
+                marginTop: "4px",
+                padding: "20px 16px",
+                background: "rgba(0,0,0,0.15)",
+                borderRadius: "10px",
+                minHeight: "80px",
                 display: "flex",
+                flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                padding: "0 8px",
+                gap: "8px",
+                opacity: jokeFade ? 1 : 0,
+                transition: "opacity 0.4s ease",
               }}
             >
               <p
-                className="joke-text"
                 style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontSize: "clamp(16px, 3.5vw, 19px)",
-                  fontStyle: "italic",
-                  color: "rgba(232,224,212,0.85)",
                   margin: 0,
-                  lineHeight: 1.6,
-                  maxWidth: "600px",
-                  opacity: jokeFade ? 1 : 0,
-                  transition: "opacity 0.4s ease",
+                  fontSize: "13px",
+                  fontWeight: 500,
+                  color: "#c9a84c",
+                  letterSpacing: "0.5px",
                 }}
               >
-                <span
-                  style={{
-                    color: "#c9a84c",
-                    fontSize: "1.4em",
-                    lineHeight: 0,
-                    verticalAlign: "-0.15em",
-                    marginRight: "2px",
-                  }}
-                >
-                  &ldquo;
-                </span>
                 Faltan{" "}
-                <span style={{ color: "#fff", fontWeight: 700 }}>
-                  {daysLeft} {daysLeft === 1 ? "día" : "días"}
+                <span style={{ fontWeight: 700, color: "#fff", fontSize: "15px" }}>
+                  {daysLeft}
                 </span>{" "}
-                para que {shuffledJokes[jokeIndex]}
-                <span
-                  style={{
-                    color: "#c9a84c",
-                    fontSize: "1.4em",
-                    lineHeight: 0,
-                    verticalAlign: "-0.15em",
-                    marginLeft: "2px",
-                  }}
-                >
-                  &rdquo;
-                </span>
+                {daysLeft === 1 ? "día" : "días"} para que...
+              </p>
+              <p
+                className="joke-text"
+                style={{
+                  margin: 0,
+                  fontSize: "clamp(17px, 4vw, 20px)",
+                  fontWeight: 400,
+                  color: "#fff",
+                  lineHeight: 1.5,
+                  maxWidth: "600px",
+                  textAlign: "center",
+                }}
+              >
+                {shuffledJokes[jokeIndex]}
               </p>
             </div>
             {/* Progress bar */}
