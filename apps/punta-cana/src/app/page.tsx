@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const FLIGHT_PP = 710;
 const MEMBERSHIP = 660;
@@ -100,6 +100,22 @@ const TRAVEL_GROUPS = [
   },
 ];
 
+const ROOM_IMAGES: Record<string, string[]> = {
+  "Junior Suite Garden View": [
+    "/rooms/grand-palladium-bavaro-suites-resort-spa-junior-suite-garden-view.webp",
+    "/rooms/grand-palladium-bavaro-suites-resort-spa-junior-suite-garden-view-1.webp",
+    "/rooms/grand-palladium-bavaro-suites-resort-spa-junior-suite-garden-view-2.webp",
+    "/rooms/grand-palladium-bavaro-suites-resort-spa-junior-suite-garden-view-3.webp",
+    "/rooms/grand-palladium-bavaro-suites-resort-spa-junior-suite-garden-view-4.webp",
+    "/rooms/grand-palladium-bavaro-suites-resort-spa-junior-suite-garden-view-5.webp",
+    "/rooms/grand-palladium-bavaro-suites-resort-spa-junior-suite-garden-view-6.webp",
+  ],
+  "Superior Junior Suite Garden View": [
+    "/rooms/superior/image_2_S4zvOtt.webp",
+    "/rooms/superior/image_3_7lMwn1k.webp",
+  ],
+};
+
 const fmt = (n: number) =>
   n.toLocaleString("en-US", {
     minimumFractionDigits: 2,
@@ -113,6 +129,8 @@ const fmtInt = (n: number) =>
 
 export default function PalladiumTrip() {
   const [selectedGroup, setSelectedGroup] = useState<number | null>(null);
+  const [activeSlide, setActiveSlide] = useState(0);
+  const sliderRef = useRef<HTMLDivElement>(null);
 
   const totalExpedition = TRAVEL_GROUPS.reduce((s, tg) => {
     const gt = GROUPS_TYPE[tg.type];
@@ -275,6 +293,7 @@ export default function PalladiumTrip() {
                   className="group-row"
                   onClick={() => {
                     setSelectedGroup(isOpen ? null : idx);
+                    setActiveSlide(0);
                   }}
                   style={{ padding: "16px 20px", cursor: "pointer" }}
                 >
@@ -595,6 +614,81 @@ export default function PalladiumTrip() {
                       >
                         Select Bavaro · All-inclusive · 9 noches
                       </p>
+                    </div>
+
+                    {/* Room images slider */}
+                    <div style={{ margin: "12px 20px 0" }}>
+                      <div
+                        ref={sliderRef}
+                        className="room-slider"
+                        onScroll={() => {
+                          if (!sliderRef.current) return;
+                          const { scrollLeft, clientWidth } =
+                            sliderRef.current;
+                          setActiveSlide(
+                            Math.round(scrollLeft / clientWidth)
+                          );
+                        }}
+                        style={{
+                          display: "flex",
+                          overflowX: "auto",
+                          overflowY: "hidden",
+                          scrollSnapType: "x mandatory",
+                          borderRadius: "10px",
+                        }}
+                      >
+                        {(ROOM_IMAGES[tg.room] ?? []).map((src, i) => (
+                          <img
+                            key={i}
+                            src={src}
+                            alt={`Habitación ${i + 1}`}
+                            loading="lazy"
+                            style={{
+                              width: "100%",
+                              flexShrink: 0,
+                              scrollSnapAlign: "start",
+                              aspectRatio: "3 / 2",
+                              objectFit: "cover",
+                              display: "block",
+                            }}
+                          />
+                        ))}
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          gap: "6px",
+                          marginTop: "10px",
+                        }}
+                      >
+                        {(ROOM_IMAGES[tg.room] ?? []).map((_, i) => (
+                          <button
+                            key={i}
+                            onClick={() => {
+                              sliderRef.current?.scrollTo({
+                                left:
+                                  i *
+                                  (sliderRef.current?.clientWidth ?? 0),
+                                behavior: "smooth",
+                              });
+                            }}
+                            style={{
+                              width: activeSlide === i ? "18px" : "6px",
+                              height: "6px",
+                              borderRadius: "3px",
+                              background:
+                                activeSlide === i
+                                  ? "#c9a84c"
+                                  : "rgba(232,224,212,0.2)",
+                              transition: "all 0.3s",
+                              border: "none",
+                              padding: 0,
+                              cursor: "pointer",
+                            }}
+                          />
+                        ))}
+                      </div>
                     </div>
 
                     {/* PAYMENT SCHEDULE */}

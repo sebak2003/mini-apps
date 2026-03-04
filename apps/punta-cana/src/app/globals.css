@@ -23,6 +23,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Room slider - hide scrollbar */
+.room-slider {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.room-slider::-webkit-scrollbar {
+  display: none;
+}
+
 /* Mobile responsive overrides for inline styles */
 @media (max-width: 640px) {
   .trip-container {
