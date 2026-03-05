@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { JOKES } from "./jokes";
 
 const FLIGHT_PP = 710;
 const MEMBERSHIP = 660;
@@ -129,61 +128,18 @@ const fmtInt = (n: number) =>
   });
 
 const TRIP_DATE = new Date(2026, 9, 27); // Oct 27, 2026
-const JOKE_INTERVAL = 10_000; // 10 seconds
-
-function shuffle(arr: string[]): string[] {
-  const out = [...arr];
-  for (let i = out.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [out[i], out[j]] = [out[j], out[i]];
-  }
-  return out;
-}
-
 export default function PalladiumTrip() {
   const [selectedGroup, setSelectedGroup] = useState<number | null>(null);
   const [activeSlide, setActiveSlide] = useState(0);
   const sliderRef = useRef<HTMLDivElement>(null);
-
-  // Countdown + jokes state
-  const [jokeIndex, setJokeIndex] = useState(0);
-  const [progress, setProgress] = useState(0);
-  const [jokeFade, setJokeFade] = useState(true);
   const [mounted, setMounted] = useState(false);
-
-  const shuffledJokes = useMemo(() => shuffle(JOKES), []);
 
   const daysLeft = useMemo(() => {
     const diff = TRIP_DATE.getTime() - Date.now();
     return Math.max(0, Math.ceil(diff / 86_400_000));
   }, []);
 
-  // Mount flag to avoid hydration mismatch (server vs client date)
   useEffect(() => setMounted(true), []);
-
-  // Auto-rotate jokes + progress bar
-  useEffect(() => {
-    if (!mounted) return;
-    const startTime = Date.now();
-
-    const progressTimer = setInterval(() => {
-      const elapsed = (Date.now() - startTime) % JOKE_INTERVAL;
-      setProgress(elapsed / JOKE_INTERVAL);
-    }, 50);
-
-    const jokeTimer = setInterval(() => {
-      setJokeFade(false);
-      setTimeout(() => {
-        setJokeIndex((i) => (i + 1) % shuffledJokes.length);
-        setJokeFade(true);
-      }, 400);
-    }, JOKE_INTERVAL);
-
-    return () => {
-      clearInterval(progressTimer);
-      clearInterval(jokeTimer);
-    };
-  }, [mounted, shuffledJokes.length]);
 
   const totalExpedition = TRAVEL_GROUPS.reduce((s, tg) => {
     const gt = GROUPS_TYPE[tg.type];
@@ -310,7 +266,7 @@ export default function PalladiumTrip() {
           </div>
         </header>
 
-        {/* COUNTDOWN + JOKES */}
+        {/* COUNTDOWN */}
         {mounted && (
           <div
             className="countdown-card"
@@ -320,79 +276,43 @@ export default function PalladiumTrip() {
                 "linear-gradient(135deg, rgba(201,168,76,0.12) 0%, rgba(201,168,76,0.03) 100%)",
               border: "1px solid rgba(201,168,76,0.2)",
               borderRadius: "14px",
-              padding: "28px 24px 20px",
+              padding: "28px 24px",
               textAlign: "center",
-              position: "relative",
-              overflow: "hidden",
             }}
           >
-            {/* Joke */}
-            <div
+            <p
               style={{
-                marginTop: "4px",
-                padding: "20px 16px",
-                background: "rgba(0,0,0,0.15)",
-                borderRadius: "10px",
-                minHeight: "80px",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: "8px",
-                opacity: jokeFade ? 1 : 0,
-                transition: "opacity 0.4s ease",
+                margin: 0,
+                fontSize: "14px",
+                fontWeight: 500,
+                color: "#c9a84c",
+                letterSpacing: "0.5px",
               }}
             >
-              <p
-                style={{
-                  margin: 0,
-                  fontSize: "13px",
-                  fontWeight: 500,
-                  color: "#c9a84c",
-                  letterSpacing: "0.5px",
-                }}
-              >
-                Faltan{" "}
-                <span style={{ fontWeight: 700, color: "#fff", fontSize: "15px" }}>
-                  {daysLeft}
-                </span>{" "}
-                {daysLeft === 1 ? "día" : "días"} para que...
-              </p>
-              <p
-                className="joke-text"
-                style={{
-                  margin: 0,
-                  fontSize: "clamp(17px, 4vw, 20px)",
-                  fontWeight: 400,
-                  color: "#fff",
-                  lineHeight: 1.5,
-                  maxWidth: "600px",
-                  textAlign: "center",
-                }}
-              >
-                {shuffledJokes[jokeIndex]}
-              </p>
-            </div>
-            {/* Progress bar */}
-            <div
+              Faltan
+            </p>
+            <p
               style={{
-                marginTop: "16px",
-                height: "2px",
-                background: "rgba(232,224,212,0.08)",
-                borderRadius: "1px",
-                overflow: "hidden",
+                margin: "8px 0 4px",
+                fontSize: "clamp(48px, 12vw, 72px)",
+                fontWeight: 700,
+                color: "#fff",
+                lineHeight: 1,
               }}
             >
-              <div
-                style={{
-                  height: "100%",
-                  width: `${progress * 100}%`,
-                  background: "#c9a84c",
-                  borderRadius: "1px",
-                  transition: "width 0.05s linear",
-                }}
-              />
-            </div>
+              {daysLeft}
+            </p>
+            <p
+              style={{
+                margin: 0,
+                fontSize: "16px",
+                fontWeight: 500,
+                color: "#c9a84c",
+                letterSpacing: "0.5px",
+              }}
+            >
+              {daysLeft === 1 ? "día" : "días"}
+            </p>
           </div>
         )}
 

@@ -64,9 +64,6 @@ body {
     gap: 8px !important;
   }
   .countdown-card {
-    padding: 24px 16px 16px !important;
-  }
-  .joke-text {
-    font-size: 16px !important;
+    padding: 24px 16px !important;
   }
 }
