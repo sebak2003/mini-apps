@@ -1167,35 +1167,124 @@ export default function PalladiumTrip() {
           </div>
         </div>
 
-        {/* NOTES */}
+        {/* MEMBERSHIP BENEFITS */}
         <div
           style={{
             marginTop: "16px",
-            padding: "16px 20px",
-            background: "rgba(0,0,0,0.15)",
+            padding: "20px 20px 16px",
+            background:
+              "linear-gradient(135deg, rgba(201,168,76,0.10) 0%, rgba(0,0,0,0.15) 100%)",
             borderRadius: "10px",
-            border: "1px solid rgba(232,224,212,0.06)",
-            fontSize: "12px",
-            lineHeight: 1.7,
-            color: "rgba(232,224,212,0.45)",
+            border: "1px solid rgba(201,168,76,0.12)",
           }}
         >
-          <p style={{ margin: "0 0 4px" }}>
-            ✦ Transporte privado aeropuerto ↔ hotel incluido
-          </p>
-          <p style={{ margin: "0 0 4px" }}>
-            ✦ Check-in VIP en lounge privado
-          </p>
-          <p style={{ margin: "0 0 4px" }}>
-            ✦ Hidroterapia gratuita en Zentropia Spa + 20% dto en
-            tratamientos
-          </p>
-          <p style={{ margin: "0 0 4px" }}>✦ Concierge personalizado</p>
           <p
             style={{
-              margin: "10px 0 0",
+              margin: "0 0 14px",
+              fontSize: "13px",
+              fontWeight: 600,
+              color: "#c9a84c",
+              letterSpacing: "0.5px",
+              textTransform: "uppercase",
+            }}
+          >
+            Membresía Palladium Travel Club
+          </p>
+
+          {/* Benefits grid */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
+              gap: "6px",
+              fontSize: "12px",
+              lineHeight: 1.7,
+              color: "rgba(232,224,212,0.55)",
+            }}
+          >
+            {/* Transport & Check-in */}
+            <p style={{ margin: 0 }}>
+              ✦ Transporte privado aeropuerto ↔ hotel
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ Check-in VIP en lounge privado
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ Early check-in / late check-out (sujeto a disponibilidad)
+            </p>
+
+            {/* Dining */}
+            <p style={{ margin: 0 }}>
+              ✦ 8 restaurantes à la carte + 5 show cooking
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ Reserva prioritaria e ilimitada en restaurantes
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ Room service 24 horas
+            </p>
+
+            {/* Drinks */}
+            <p style={{ margin: 0 }}>
+              ✦ Bebidas premium y mixología en 25 bares
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ Minibar reabastecido diariamente
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ Cafés artesanales y cócteles internacionales
+            </p>
+
+            {/* Beach & Pools */}
+            <p style={{ margin: 0 }}>
+              ✦ Playa exclusiva Bávaro Beach (arena blanca)
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ 6 piscinas (incluye adults-only y familiar)
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ Áreas privadas exclusivas para socios
+            </p>
+
+            {/* Spa & Wellness */}
+            <p style={{ margin: 0 }}>
+              ✦ Hidroterapia gratis en Zentropia Spa
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ Descuentos en tratamientos spa (hasta 40%)
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ Yoga, meditación, aquagym y paddle surf
+            </p>
+
+            {/* Entertainment & Sports */}
+            <p style={{ margin: 0 }}>
+              ✦ Shows nocturnos, música en vivo y discoteca
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ Deportes acuáticos no motorizados + tenis y pickleball
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ Acceso a Grand Palladium Palace y Punta Cana Resort
+            </p>
+
+            {/* VIP touches */}
+            <p style={{ margin: 0 }}>
+              ✦ Concierge personalizado + pulsera VIP
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ Regalo de bienvenida y amenidades en habitación
+            </p>
+            <p style={{ margin: 0 }}>
+              ✦ Wi-Fi de alta velocidad incluido
+            </p>
+          </div>
+
+          <p
+            style={{
+              margin: "14px 0 0",
               fontSize: "11px",
-              color: "rgba(232,224,212,0.3)",
+              color: "rgba(232,224,212,0.25)",
             }}
           >
             Tarifa no reembolsable con promo BIGDAYS −13.33% · Precios en
