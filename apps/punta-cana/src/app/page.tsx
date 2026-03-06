@@ -47,7 +47,8 @@ const TRAVEL_GROUPS = [
     members: ["Omar", "Adriana", "Flor"],
     type: "3a",
     color: "#e07a5f",
-    hotel: 2536.86,
+    hotel: 2272.13,
+    nights: 8,
     room: "Superior Junior Suite Garden View",
   },
   {
@@ -88,16 +89,6 @@ const TRAVEL_GROUPS = [
     hotel: 2425.97,
     room: "Junior Suite Garden View",
   },
-  {
-    id: 8,
-    name: "Roque",
-    members: ["Roque"],
-    type: "1a",
-    color: "#7ec8a0",
-    detail: "Papá de Bruno",
-    hotel: 1347.76,
-    room: "Junior Suite Garden View",
-  },
 ];
 
 const ROOM_IMAGES: Record<string, string[]> = {
@@ -133,6 +124,7 @@ export default function PalladiumTrip() {
   const [activeSlide, setActiveSlide] = useState(0);
   const sliderRef = useRef<HTMLDivElement>(null);
   const [mounted, setMounted] = useState(false);
+  const [view, setView] = useState<"viaje" | "cobros">("viaje");
 
   const daysLeft = useMemo(() => {
     const diff = TRIP_DATE.getTime() - Date.now();
@@ -258,9 +250,9 @@ export default function PalladiumTrip() {
               letterSpacing: "0.5px",
             }}
           >
-            <span>8 habitaciones</span>
+            <span>7 habitaciones</span>
             <span style={{ color: "rgba(232,224,212,0.25)" }}>·</span>
-            <span>19 viajeros</span>
+            <span>18 viajeros</span>
             <span style={{ color: "rgba(232,224,212,0.25)" }}>·</span>
             <span>Promo BIGDAYS −13.33%</span>
           </div>
@@ -316,6 +308,219 @@ export default function PalladiumTrip() {
           </div>
         )}
 
+        {/* TAB SWITCHER */}
+        <div
+          style={{
+            display: "flex",
+            gap: "4px",
+            marginBottom: "16px",
+            background: "rgba(0,0,0,0.2)",
+            borderRadius: "10px",
+            padding: "4px",
+          }}
+        >
+          {(["viaje", "cobros"] as const).map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setView(tab)}
+              style={{
+                flex: 1,
+                padding: "10px 0",
+                borderRadius: "8px",
+                fontSize: "13px",
+                fontWeight: 600,
+                letterSpacing: "0.5px",
+                cursor: "pointer",
+                transition: "all 0.2s",
+                background:
+                  view === tab
+                    ? "rgba(201,168,76,0.15)"
+                    : "transparent",
+                color:
+                  view === tab
+                    ? "#c9a84c"
+                    : "rgba(232,224,212,0.35)",
+                border:
+                  view === tab
+                    ? "1px solid rgba(201,168,76,0.25)"
+                    : "1px solid transparent",
+              }}
+            >
+              {tab === "viaje" ? "Viaje" : "Cobros"}
+            </button>
+          ))}
+        </div>
+
+        {view === "cobros" ? (
+          <>
+            {(() => {
+              const rounds = TRAVEL_GROUPS.map((tg) => {
+                const gt = GROUPS_TYPE[tg.type];
+                const hotelMembership = tg.hotel + MEMBERSHIP;
+                const halfHotel = Math.floor(hotelMembership / 2 / 100) * 100;
+                const remainder = hotelMembership - halfHotel;
+                return { name: tg.name, color: tg.color, halfHotel, remainder };
+              });
+              const total1 = rounds.reduce((s, r) => s + r.halfHotel, 0);
+              const total2 = rounds.reduce((s, r) => s + r.remainder, 0);
+
+              const renderRound = (
+                title: string,
+                subtitle: string,
+                accentColor: string,
+                getAmount: (r: (typeof rounds)[0]) => number,
+                total: number,
+              ) => (
+                <div
+                  style={{
+                    background: "rgba(255,255,255,0.025)",
+                    border: "1px solid rgba(232,224,212,0.06)",
+                    borderRadius: "12px",
+                    overflow: "hidden",
+                  }}
+                >
+                  <div
+                    style={{
+                      padding: "16px 20px",
+                      borderBottom: "1px solid rgba(232,224,212,0.06)",
+                    }}
+                  >
+                    <p
+                      style={{
+                        margin: "0 0 2px",
+                        fontSize: "11px",
+                        letterSpacing: "2px",
+                        textTransform: "uppercase",
+                        color: accentColor,
+                        fontWeight: 600,
+                      }}
+                    >
+                      {title}
+                    </p>
+                    <p
+                      style={{
+                        margin: 0,
+                        fontSize: "12px",
+                        color: "rgba(232,224,212,0.35)",
+                      }}
+                    >
+                      {subtitle}
+                    </p>
+                  </div>
+                  {rounds.map((r, i) => (
+                    <div
+                      key={i}
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        padding: "12px 20px",
+                        borderBottom:
+                          i < rounds.length - 1
+                            ? "1px solid rgba(232,224,212,0.04)"
+                            : "none",
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "10px",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "8px",
+                            height: "8px",
+                            borderRadius: "50%",
+                            background: r.color,
+                            flexShrink: 0,
+                          }}
+                        />
+                        <span
+                          style={{
+                            fontSize: "14px",
+                            color: "rgba(232,224,212,0.75)",
+                          }}
+                        >
+                          {r.name}
+                        </span>
+                      </div>
+                      <span
+                        style={{
+                          fontSize: "15px",
+                          fontWeight: 600,
+                          color: "#fff",
+                          fontFamily: "'Playfair Display', serif",
+                        }}
+                      >
+                        ${fmt(getAmount(r))}
+                      </span>
+                    </div>
+                  ))}
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      padding: "14px 20px",
+                      borderTop: `1px solid ${accentColor}25`,
+                      background: `${accentColor}08`,
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontSize: "12px",
+                        fontWeight: 600,
+                        color: accentColor,
+                        letterSpacing: "1px",
+                        textTransform: "uppercase",
+                      }}
+                    >
+                      Total a recibir
+                    </span>
+                    <span
+                      style={{
+                        fontSize: "22px",
+                        fontWeight: 700,
+                        color: "#fff",
+                        fontFamily: "'Playfair Display', serif",
+                      }}
+                    >
+                      ${fmt(total)}
+                    </span>
+                  </div>
+                </div>
+              );
+
+              return (
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "12px",
+                  }}
+                >
+                  {renderRound(
+                    "1ra Tanda — Seña del hotel",
+                    "Antes del 10 de marzo · ~50% hotel + membresía",
+                    "#c9a84c",
+                    (r) => r.halfHotel,
+                    total1,
+                  )}
+                  {renderRound(
+                    "2da Tanda — Saldo del hotel",
+                    "Antes del 27 de septiembre · saldo restante",
+                    "#6ba3d6",
+                    (r) => r.remainder,
+                    total2,
+                  )}
+                </div>
+              );
+            })()}
+          </>
+        ) : (
+        <>
         {/* GROUPS */}
         <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
           {TRAVEL_GROUPS.map((tg, idx) => {
@@ -672,7 +877,7 @@ export default function PalladiumTrip() {
                           margin: "0 0 12px",
                         }}
                       >
-                        Select Bavaro · All-inclusive · 9 noches
+                        Select Bavaro · All-inclusive · {tg.nights ?? 9} noches
                       </p>
                     </div>
 
@@ -1149,7 +1354,7 @@ export default function PalladiumTrip() {
                   color: "rgba(232,224,212,0.4)",
                 }}
               >
-                8 habitaciones · 19 personas · todo incluido
+                7 habitaciones · 18 personas · todo incluido
               </p>
             </div>
             <p
@@ -1166,6 +1371,8 @@ export default function PalladiumTrip() {
             </p>
           </div>
         </div>
+        </>
+        )}
 
         {/* MEMBERSHIP BENEFITS */}
         <div
