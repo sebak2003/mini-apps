@@ -18,7 +18,7 @@ const GROUPS_TYPE: Record<
 > = {
   "1a": { label: "1 Adulto", people: 1 },
   "2a": { label: "2 Adultos", people: 2 },
-  "2a2k": { label: "2 Adultos + 2 Niños", people: 4, sub: "(15 y 6 años)" },
+  "2a2k": { label: "2 Adultos + 2 Niños", people: 4 },
   "3a": { label: "3 Adultos", people: 3 },
 };
 
@@ -29,8 +29,8 @@ const TRAVEL_GROUPS = [
     members: ["Sebastian"],
     type: "1a",
     color: "#c9a84c",
-    hotel: 1347.76,
-    room: "Junior Suite Garden View",
+    hotel: 1383.74,
+    room: "Superior Junior Suite Garden View",
   },
   {
     id: 2,
@@ -38,8 +38,8 @@ const TRAVEL_GROUPS = [
     members: ["Daniel", "Silvia"],
     type: "2a",
     color: "#6ba3d6",
-    hotel: 1797.01,
-    room: "Junior Suite Garden View",
+    hotel: 1844.99,
+    room: "Superior Junior Suite Garden View",
   },
   {
     id: 3,
