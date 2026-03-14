@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 
-const FLIGHT_PP = 710;
+const FLIGHT_PP = 720;
 const MEMBERSHIP = 660;
 
 const OLD_PRICES: Record<string, { total: number; pp: number }> = {

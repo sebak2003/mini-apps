@@ -68,11 +68,11 @@ Antes del **27 de septiembre** (30 dias antes del viaje)
 
 Como dueno de la membresia, no pago los $660 en ningun grupo.
 
-|                    | Hotel      | Vuelos (x$710) | Total       |
+|                    | Hotel      | Vuelos (x$720) | Total       |
 |--------------------|------------|----------------|-------------|
-| Sebastian (solo)   | $1,383.74  | $710           | $2,093.74   |
-| Daniel y Silvia    | $1,844.99  | $1,420         | $3,264.99   |
-| **Total**          | **$3,228.73** | **$2,130**  | **$5,358.73** |
+| Sebastian (solo)   | $1,383.74  | $720           | $2,103.74   |
+| Daniel y Silvia    | $1,844.99  | $1,440         | $3,284.99   |
+| **Total**          | **$3,228.73** | **$2,160**  | **$5,388.73** |
 
 ### Alternativa descartada: 1 habitacion para los 3
 
